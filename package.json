@@ -1,0 +1,27 @@
+{
+  "name": "out-of-office",
+  "version": "1.0.0",
+  "description": "Out of Office is your go-to travel application.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jojonah1812/out-of-office.git"
+  },
+  "keywords": [
+    "travel",
+    "explore",
+    "mysql",
+    "sequelize",
+    "genius"
+  ],
+  "author": "Yasi, Tai, Jonah, Henry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jojonah1812/out-of-office/issues"
+  },
+  "homepage": "https://github.com/jojonah1812/out-of-office#readme"
+}
