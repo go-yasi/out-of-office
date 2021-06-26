@@ -1,0 +1,31 @@
+p {
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.logo {
+    width: 99vw;
+    position: fixed;
+    top: -40px;
+}
+
+#introVideo {
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    top: -20%;
+    min-height: 150vh;
+    width: auto;
+  }
+
+#login-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    text-align: center;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    font-size: 1.4vw;
+}
+
