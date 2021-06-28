@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('.../config/connection');
+const sequelize = require('../config/connection');
 
 class Location extends Model {}
 
@@ -22,6 +22,10 @@ Location.init(
         language: {
             type: DataTypes.STRING,
             allowNull: false,
+        }, 
+        climate: {
+            type: DataTypes.STRING,
+            allowNull: true,
         }
     },
     {

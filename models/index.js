@@ -3,6 +3,7 @@ const Photos = require('./Photos');
 const Trip = require('./Trip');
 const User = require('./User');
 
+// USER - LOCATION association
 User.belongsToMany(Location, {
     through: {
         model: Trip,
@@ -19,6 +20,19 @@ Location.belongsToMany(User, {
     as: 'location_users'
 });
 
+
+// TRIP - LOCATION association
+Trip.belongsTo(Location, {
+    foreignKey: 'trip_id',
+});
+
+Location.hasMany(Trip, {
+    foreignKey: 'trip_id',
+});
+
+
+
+// TRIP - PHOTOS association
 Trip.hasMany(Photos, {
     foreignKey: 'trip_id',
     onDelete: 'CASCADE',
@@ -27,5 +41,6 @@ Trip.hasMany(Photos, {
 Photos.belongsTo(Trip, {
     foreignKey: 'trip_id',
 });
+
 
 module.exports = { Location, Photos, Trip, User };
