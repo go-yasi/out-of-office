@@ -19,4 +19,13 @@ Location.belongsToMany(User, {
     as: 'location_users'
 });
 
+Trip.hasMany(Photos, {
+    foreignKey: 'trip_id',
+    onDelete: 'CASCADE',
+});
+
+Photos.belongsTo(Trip, {
+    foreignKey: 'trip_id',
+});
+
 module.exports = { Location, Photos, Trip, User };
