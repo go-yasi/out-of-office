@@ -22,6 +22,10 @@ Location.init(
         language: {
             type: DataTypes.STRING,
             allowNull: false,
+        }, 
+        climate: {
+            type: DataTypes.STRING,
+            allowNull: true,
         }
     },
     {
