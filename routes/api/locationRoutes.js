@@ -33,3 +33,6 @@ router.get('/:id', async (req, res) => {
 });
 
 module.exports = router;
+
+
+// TESTED THESE ROUTES, BOTH WORKING
