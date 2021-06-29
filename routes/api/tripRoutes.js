@@ -18,16 +18,14 @@ router.get('/location/:id', withAuth, async (req, res) => {
 
 router.get('/:id', withAuth, async (req, res) => {
     try {
-      const tripData = await Trip.findOne(req.params.id, {
-          include: [{ model: Location, through: User }]
+      const tripData = await Trip.findByPk(req.params.id, {
+          include: [{ model: Location, model: User }]
       });
       res.status(200).json(tripData);
     } catch (err) {
       res.status(400).json(err);
     }
 });
-
-
 
 // DELETE a trip
 router.delete('/:id', withAuth, async (req, res) => {
