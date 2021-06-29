@@ -62,12 +62,14 @@ Trip.init(
         model: 'user',
         key: 'id',
       },
-    },
+    }
+  },
+  {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Trip',
+    modelName: 'trip',
   }
 );
 

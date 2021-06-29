@@ -1,7 +1,28 @@
+// important to create in order of use
 const Location = require('./Location');
 const Photos = require('./Photos');
-const Trip = require('./Trip');
 const User = require('./User');
+const Trip = require('./Trip');
+
+// TRIP - LOCATION association
+Trip.belongsTo(Location, {
+    foreignKey: 'trip_id',
+});
+
+Location.hasMany(Trip, {
+    foreignKey: 'trip_id',
+});
+
+
+// TRIP - PHOTOS association
+Trip.hasMany(Photos, {
+    foreignKey: 'trip_id',
+    onDelete: 'CASCADE',
+});
+
+Photos.belongsTo(Trip, {
+    foreignKey: 'trip_id',
+});
 
 // USER - LOCATION association
 User.belongsToMany(Location, {
@@ -18,28 +39,6 @@ Location.belongsToMany(User, {
         unique: false
     },
     as: 'location_users'
-});
-
-
-// TRIP - LOCATION association
-Trip.belongsTo(Location, {
-    foreignKey: 'trip_id',
-});
-
-Location.hasMany(Trip, {
-    foreignKey: 'trip_id',
-});
-
-
-
-// TRIP - PHOTOS association
-Trip.hasMany(Photos, {
-    foreignKey: 'trip_id',
-    onDelete: 'CASCADE',
-});
-
-Photos.belongsTo(Trip, {
-    foreignKey: 'trip_id',
 });
 
 
