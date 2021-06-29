@@ -54,7 +54,7 @@ Trip.init(
       references: {
         model: 'location',
         key: 'id',
-        },
+      },
     },
     user_id: {
       type: DataTypes.INTEGER,
