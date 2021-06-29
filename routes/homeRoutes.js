@@ -8,7 +8,7 @@ router.get('/', withAuth, async (req, res) => {
   
       const locations = locationData.map((info) => info.get({ plain: true }));
   
-      res.render('homepage', {
+      res.render('location', {
         users,
         // Pass the logged in flag to the template
         logged_in: req.session.logged_in,

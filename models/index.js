@@ -13,7 +13,6 @@ Location.hasMany(Trip, {
     foreignKey: 'trip_id',
 });
 
-
 // TRIP - PHOTOS association
 Trip.hasMany(Photos, {
     foreignKey: 'trip_id',
@@ -40,6 +39,5 @@ Location.belongsToMany(User, {
     },
     as: 'location_users'
 });
-
 
 module.exports = { Location, Photos, Trip, User };
