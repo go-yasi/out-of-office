@@ -3,7 +3,7 @@ const { Trip, Photos, User } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // Get a trip
-router.get('/trip/:id', withAuth, async (req, res) => {
+router.get('/trip/location/:id', withAuth, async (req, res) => {
   try {
     const tripData = await Trip.findAll({
         where: { location_id: req.params.id,
