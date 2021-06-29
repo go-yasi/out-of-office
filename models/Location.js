@@ -27,6 +27,10 @@ Location.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
+        photo: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
         language: {
             type: DataTypes.STRING,
             allowNull: false,
