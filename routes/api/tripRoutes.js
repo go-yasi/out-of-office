@@ -1,9 +1,9 @@
 const router = require('express').Router();
-const { Trip, Photos, User } = require('../../models');
+const { Trip, User } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // Get a trip
-router.get('/trip/location/:id', withAuth, async (req, res) => {
+router.get('/location/:id', withAuth, async (req, res) => {
   try {
     const tripData = await Trip.findAll({
         where: { location_id: req.params.id,
@@ -16,7 +16,7 @@ router.get('/trip/location/:id', withAuth, async (req, res) => {
   }
 });
 
-router.get('/trip/:id', withAuth, async (req, res) => {
+router.get('/:id', withAuth, async (req, res) => {
     try {
       const tripData = await Trip.findOne(req.params.id, {
           include: [{ model: Location, through: User }]
@@ -25,12 +25,12 @@ router.get('/trip/:id', withAuth, async (req, res) => {
     } catch (err) {
       res.status(400).json(err);
     }
-  });
+});
 
 
 
 // DELETE a trip
-router.delete('/trip/:id', withAuth, async (req, res) => {
+router.delete('/:id', withAuth, async (req, res) => {
   try {
     const tripData = await Trip.destroy({
       where: { id: req.params.id }
