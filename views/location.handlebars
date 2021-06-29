@@ -1,4 +1,4 @@
-<head>
+{{!-- <head>
   <meta charset="UTF-8">
   <title>User Profile</title>
   {{!-- <link rel="stylesheet" href="/css/jass.css"> --}}
@@ -18,4 +18,24 @@
   </div>
   </body>
 
-</html>
+</html> --}}
+
+{{#each locations as |location|}}
+
+<div class="location-card">
+  <h2 class="location-name">
+    {{location.city}}, {{location.country}}
+  </h2>
+  <p class="location-desc">
+    {{location.description}}
+  </p>
+  <img src="{{location.photo}}" alt="{{location.city}}">
+  <p class="language">
+    {{location.language}}
+  </p>
+  <div class="climate">{{location.climate}}</div>
+</div>
+
+{{/each}}
+
+{{!-- ASK: How can we limit the number of results on the page, and add an option to go to the next page? --}}
