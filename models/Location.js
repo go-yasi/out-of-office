@@ -11,7 +11,15 @@ Location.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        location_name: {
+        city: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        state: {
+            type: DataTypes.STRING,
+            allowNull: true,
+        },
+        country: {
             type: DataTypes.STRING,
             allowNull: false,
         },
