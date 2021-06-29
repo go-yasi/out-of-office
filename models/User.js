@@ -46,18 +46,7 @@ User.init(
       bio: {
           type: DataTypes.STRING,
           allowNull: false,
-          validate: {
-              len: [120],
-          }
-      },
-      profile_pic: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
-      lifestyle: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
+      }
     },
     {
       hooks: {
@@ -79,3 +68,6 @@ User.init(
   );
   
   module.exports = User;
+
+  // ADD VALIDATION FOR BIO MAX LENGTH
+  // NOTE TO ADD PROFILE PIC AND LIFESTYLE LATER
