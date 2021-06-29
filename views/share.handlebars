@@ -1,94 +1,81 @@
-{{!-- <div class="menu-container">
-  <div class="card-header col-md-10">
-    <h2>
-      &#127869 Current Menu
-    </h2>
-  </div>
-  {{#each dishes as |dish|}}
-    <div class="dish col-md-5">
-      <p>
-        {{dish.id}}.
-        {{dish.dish_name}}
-      </p>
-    </div>
-    <div class="col-md-7">
-      <p>
-        Guest:
-        {{dish.guest_name}}
-      </p>
-    </div>
-  {{/each}}
-</div> --}}
-<!-- This is the form for adding a new dish -->
-<div class="add-dish-container">
+<!-- This is the form for adding a new Trip info -->
+<div class="add-trip-container">
   <h2>
     Tell us about your trip!!!
   </h2>
-  <form class="new-dish-form">
-    <label for="dish_name">
+  <form class="trip-form">
+    <label for="location-name">
       Destination:
     </label>
     <br />
-    <textarea id="dish_name" name="dish_name" rows="2" cols="30">
-      {{dish_name}}
+    <textarea id="location-name" name="location-name" rows="2" cols="30">
     </textarea>
     <br />
     <label for="description">
       Description:
     </label>
     <br />
-    <textarea id="description" name="description" rows="5" cols="30">
-      {{description}}
+    <textarea id="location-desc" name="location-desc" rows="5" cols="30">
     </textarea>
     <br />
-    <label for="guest_name">
+    <label for="total-traveller">
       Total travellers:
     </label>
     <br />
-    <textarea id="guest_name" name="guest_name" rows="2" cols="30">
-      {{guest_name}}
+    <textarea id="total-traveller" name="total-traveller" rows="2" cols="30">
     </textarea>
     <br />
-    <label for="guest_name">
+    <label for="budget">
       Budget:
     </label>
      <br />
-    <textarea id="guest_name" name="guest_name" rows="2" cols="30">
-      {{guest_name}}
+    <textarea id="trip-budget" name="trip-budget" rows="2" cols="30">
     </textarea>
     <br />
-    <label for="guest_name">
-      Restaurants:
+    <label for="cloud-pic">
+      Upload Pictures:
     </label>
     <br />
-    <textarea id="guest_name" name="guest_name" rows="2" cols="30">
-      {{guest_name}}
+    <textarea id="cloud-pic" name="cloud-pic" rows="2" cols="30">
     </textarea>
     <br />
-    <label for="guest_name">
-      Culture:
+    <label for="food-rec">
+      Your Top 3 Restaurant Recommendations:
     </label>
     <br />
-    <textarea id="guest_name" name="guest_name" rows="2" cols="30">
-      {{guest_name}}
+    <textarea id="food-rec1" name="food-rec1" rows="2" cols="30">
     </textarea>
     <br />
-    <label for="guest_name">
-      Activities:
-    </label>
-    <br />
-    <textarea id="guest_name" name="guest_name" rows="2" cols="30">
-      {{guest_name}}
+     <textarea id="food-rec2" name="food-rec2" rows="2" cols="30">
     </textarea>
     <br />
-    <input type="checkbox" id="has_nuts" name="has_nuts" value="true" />
-    <label for="has_nuts">
-      Check box if this dish contains nuts
+     <textarea id="food-rec3" name="food-rec3" rows="2" cols="30">
+    </textarea>
+    <br />
+    <label for="hotel">
+      Where did you stay at?:
     </label>
+    <br />
+    <textarea id="hotel" name="hotel" rows="2" cols="30">
+    </textarea>
+    <br />
+     <label for="activities">
+      Favorite Activities:
+    </label>
+    <br />
+    <textarea id="activities" name="activities" rows="2" cols="30">
+    </textarea>
+    <br />
+     <label for="culture-sight">
+      Favorite Cultural Sight:
+    </label>
+    <br />
+    <textarea id="culture-sight" name="culture-sight" rows="2" cols="30">
+    </textarea>
     <br />
     <button type="submit" value="Submit">
       Submit
     </button>
   </form>
 </div>
-<script src="/js/add-dish.js"></script>
+<script src="/js/share.js"></script>
