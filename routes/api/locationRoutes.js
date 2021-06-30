@@ -26,17 +26,17 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
     try {
         const locationData = await Location.findByPk(req.params.id, {
-            include: [{ model: User, through: Trip, as: 'location_users' }]
+            include: [{ model: User, through: Trip, as: 'location_users'}]
         });
-
         if (!locationData) {
             res.status(404).json({ message: 'No location found with this ID!' });
             return;
         }
-        const locations = locationData.map((location) => 
-        location.get({plain: true}));
+        const locations = locationData.get({plain: true});
         
-        res.status(200).json(locationData);
+        // res.status(200).json(locations);
+        console.log(locations);
+        res.render('post', locations);
     } catch (err) {
         res.status(500).json(err);
     }
@@ -44,5 +44,3 @@ router.get('/:id', async (req, res) => {
 
 module.exports = router;
 
-
-// TESTED THESE ROUTES, BOTH WORKING
