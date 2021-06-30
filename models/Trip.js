@@ -22,7 +22,15 @@ Trip.init(
         type: DataTypes.INTEGER,
         allowNull: false,
     },
-    restaurant_rec: {
+    restaurant_rec1: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    restaurant_rec2: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    restaurant_rec3: {
         type: DataTypes.STRING,
         allowNull: false,
     },

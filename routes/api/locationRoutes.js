@@ -22,7 +22,7 @@ router.get('/', async (req, res) => {
     }
 });
 
-// GET a location by id //
+// GET a location by id // ???
 router.get('/:id', async (req, res) => {
     try {
         const locationData = await Location.findByPk(req.params.id, {
@@ -36,7 +36,7 @@ router.get('/:id', async (req, res) => {
         const locations = locationData.map((location) => 
         location.get({plain: true}));
         
-        res.status(200).json(locationData);
+        res.status(200).json(locations);
     } catch (err) {
         res.status(500).json(err);
     }
