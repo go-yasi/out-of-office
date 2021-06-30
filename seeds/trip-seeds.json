@@ -10,8 +10,8 @@
         "relaxing_activities":"",
         "shopping":"Harrods",
         "allow_pets": true,
-        "location_id":1
-        
+        "location_id":1,
+        "user_id":1
     },
     {
         "description":"This was our second trip to London so we were looking for a trip that was more focused on relaxation.  ",

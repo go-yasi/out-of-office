@@ -37,7 +37,7 @@ router.get('/:id', withAuth, async (req, res) => {
         
         // res.status(200).json(locations);
         console.log(locations);
-        res.render('trips', locations, {loggedIn: req.session.loggedIn});
+        res.render('trips', {...locations, loggedIn: req.session.loggedIn});
     } catch (err) {
         res.status(500).json(err);
     }

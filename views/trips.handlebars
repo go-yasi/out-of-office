@@ -1,12 +1,16 @@
 
 <div class="location-trip-post">
-  <img src="(result.info.url)" class="user-photo" alt="...">
+  <img src="{{result.info.url}}" class="user-photo" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
-    <p class="card-text trip-description">{{trip.description}}</p>
+    <p class="card-text trip-description">{{description}}</p>
+    {{#each location_users as |sample|}}
+    <p>{{sample.username}}</p>
+    <p>{{sample.trip.budget}}</p>
+    {{/each}}
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item trip-userName">{{user.username}}</li>
+    {{!-- <li class="list-group-item trip-userName">{{location_users[0].trip.hotel}}</li> --}}
     <li class="list-group-item trip-budget">{{trip.budget}}</li>
   </ul>
   <div class="card-body">

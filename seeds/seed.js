@@ -30,17 +30,17 @@ const seedDatabase = async () => {
     });
     console.log('\n----- LOCATIONS SEEDED -----\n');
 
-    await Trip.bulkCreate(tripSeedData, {
-        individualHooks: true,
-        returning: true,
-    });
-    console.log('\n----- TRIPS SEEDED -----\n');
-
     await User.bulkCreate(userSeedData, {
         individualHooks: true,
         returning: true,
     });
     console.log('\n----- USERS SEEDED -----\n');
+
+    await Trip.bulkCreate(tripSeedData, {
+        individualHooks: true,
+        returning: true,
+    });
+    console.log('\n----- TRIPS SEEDED -----\n');
 
     process.exit(0);
 };
