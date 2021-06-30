@@ -13,6 +13,7 @@ Trip.init(
     },
     description: {
       type: DataTypes.STRING,
+      allowNull: false,
     },
     budget: {
         type: DataTypes.INTEGER,
@@ -22,9 +23,17 @@ Trip.init(
         type: DataTypes.INTEGER,
         allowNull: false,
     },
-    restaurant_rec: {
+    restaurant_rec1: {
         type: DataTypes.STRING,
         allowNull: false,
+    },
+    restaurant_rec2: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    restaurant_rec3: {
+        type: DataTypes.STRING,
+        allowNull: true,
     },
     hotel: {
       type: DataTypes.STRING,
@@ -32,22 +41,23 @@ Trip.init(
     },
     culture: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
     },
     active_activities: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
     },
     relaxing_activities: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
     },
     shopping: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
     },
     allow_pets: {
         type: DataTypes.BOOLEAN,
+        allowNull: true,
     },
     location_id: {
       type: DataTypes.INTEGER,

@@ -7,7 +7,11 @@
 
     <label for="city-name">Destination City:</label>
     <br/>
-    <input class="share-input" id="city-name" name="city-name"></input>
+    <select class="share-input" id="city-name" name="city-name">
+      {{#each locations as |location|}}
+      <option value="{{location.id}}">{{location.city}}</option>
+      {{/each}}
+    </select>
     <br/>
 
     <label for="description">Description:</label>

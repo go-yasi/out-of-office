@@ -15,9 +15,10 @@
 // seedAll();
 
 const sequelize = require('../config/connection');
-const { Location } = require('../models');
+const { Location, Trip } = require('../models');
 
 const locationSeedData = require('./location-seeds.json');
+const tripSeedData = require('./trip-seeds.json');
 
 const seedDatabase = async () => {
     await sequelize.sync({ force: true });
@@ -27,6 +28,12 @@ const seedDatabase = async () => {
         returning: true,
     });
     console.log('\n----- LOCATIONS SEEDED -----\n');
+
+    await Trip.bulkCreate(tripSeedData, {
+        individualHooks: true,
+        returning: true,
+    });
+    console.log('\n----- TRIPS SEEDED -----\n');
 
     process.exit(0);
 };
