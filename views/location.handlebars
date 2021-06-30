@@ -1,11 +1,12 @@
 <div class="location-intro">
   {{!-- Left box --}}
   <div class="loc-left">
-    <h3 class="intro-text">Plan your next escape</h3>
+    <img class="compass-logo" src="../../assets/landing/compass-logo.png" alt="compass graphic">
+    <h3 class="intro-text">Plan your</br>next Escape</h3>
     </br>
     <p class="intro-tagline">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
     </br>
-    <h6 class="intro-pitch">Scroll down to explore destinations</h6>
+    <h6 class="intro-cta">Scroll down to explore destinations</h6>
     </br>
   </div>
   {{!-- Right box --}}
@@ -15,7 +16,7 @@
 </div>
 
 <div class="all-locations">
-  <h3 class="location-header">Latest Posts</h3>
+  <h6 class="location-header">Latest Posts</h6>
 
   {{#each locations as |location|}}
   <a href="/api/location/{{location.id}}">

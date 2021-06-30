@@ -7,13 +7,16 @@
 }
 
 @font-face {
-    font-family: 'Compagnon';
+    font-family: 'Mono';
     src: url("../assets/fonts/Compagnon-Italic.woff") format("woff");
     src: url("../assets/fonts/Compagnon-Italic.woff2") format("woff2");
 }
 @font-face {
-    font-family: 'Hai';
-    src: url("../assets/fonts/Haigrast.otf") format("otf");
+    font-family: 'Cursive';
+    src: url('../assets/fonts/haigrast-webfont.woff2') format('woff2'),
+         url('../assets/fonts/haigrast-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 * {
     box-sizing: border-box;
@@ -62,16 +65,12 @@ h6 {
     border-bottom: 1px solid var(--brown);
     align-items: center;
     justify-content: space-between;
-    background: rgb(34,71,195);
-    background: radial-gradient(circle, rgb(90, 110, 175) 0%, rgba(107,164,167,1) 26%, rgb(146, 155, 144) 50%, rgb(108, 146, 104) 75%, rgb(109, 155, 167) 100%);
-    background-size: 300%;
-    background-position: bottom left;
-    animation: rotate-hue 4s linear 0ms infinite;
+    
     
 }
 .ooo-header-logo {
     margin: 0;
-    font-family: 'Compagnon';
+    font-family: 'Mono';
     font-size: 22px;
     margin: .5em;
 }
@@ -150,6 +149,21 @@ footer {
     overflow-x: hidden !important;
     overflow-y:hidden;
 }
+.compass-logo {
+    width: 125px;
+    margin-bottom:50px;
+}
+.intro-text {
+    font-family: 'Cursive';
+    font-size: 5vw;
+    line-height: 1.2;
+    color: var(--brown);
+    word-spacing: -.2em;
+    margin-bottom: .5em;
+}
+.intro-cta {
+    margin-top: 4em;
+}
 .loc-left {
     width: 50%;
     
@@ -198,7 +212,10 @@ footer {
     background-color: #37342f9a;
 }
 .location-name {
-    /* text-transform: uppercase; */
+    font-size: 2vw;
+    line-height: 1.2;
+    margin-bottom: .5em;
+    font-family: 'Mono';
 }
 .little-loc-info {
     display: flex;
