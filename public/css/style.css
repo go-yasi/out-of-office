@@ -29,7 +29,7 @@ a {
 }
 
 /* LANDING PAGE */
-.logo {
+.landing-logo {
     width: 100vw;
     position: fixed;
     top: -5vw;
@@ -62,6 +62,7 @@ a {
 .login-row {
     display: flex;
     justify-content: space-around;
+    margin-top: 4vw;
 }
 .half-col {
     border: 1px solid blue;
@@ -93,6 +94,7 @@ input {
     border-left: none;
     border-right: none;
     border-bottom: 1px solid gray;
+    width: 20vw;
 }
 .login-btn, .signup-btn {
     border-radius: 0;
