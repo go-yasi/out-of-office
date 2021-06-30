@@ -6,28 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Out of Office</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏝</text></svg>">
+  <link rel="stylesheet" type="text/css" href="/css/reset.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
 <body>
-  {{!-- {{#if logged_in}} --}}
-<div class="whole-page">
-    <div class="side-logo">
-        <img src=".../assets/landing/ooo-logo-90.png" alt="Out of Office logo in bold lettering" class="logo-90">
+
+  <header class="main-header">
+    <div class="main-logo">
+      <h1 class="ooo-header-logo">
+        Out of Office
+      </h1>
+    </div>
+    
+
+    <nav>
+      <a href="/api/location" class="btn">Home</a>
+      <a href="/api/share" class="btn">+ New Post</a>
+      <button class="btn" id="logout">Logout</button>
+    </nav>
+
+    
+
+  </header>
+  <div class="marquee">
+      <div class="track">
+        <p>Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind    —Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind    —</p>
+      </div>
     </div>
 
-    <div class="main-content">
-        <nav class="main-nav">
-            <a href="/api/location" class="navguy btn">Home</a>
-            <a href="/api/share" class="navguy btn">+ New Post</a>
-            <button class="navguy btn" id="logout">Logout</button>
-        </nav>
-{{!-- {{/if}} --}}
-        <div class="main-body">
-        {{{ body }}}
-        </div>
-    </div>
-</div>
+
+  <main class="main-body">
+    {{{ body }}}
+  </main>
   
   <footer>
   </footer>

@@ -1,27 +1,39 @@
-
-<h3 class="location-header">Latest Posts</h3>
-{{#each locations as |location|}}
-
-<div class="location-card">
-
-  <div class="flex-image">
-    <img src="{{location.photo}}" alt="{{location.city}}">
+<div class="location-intro">
+  {{!-- Left box --}}
+  <div class="loc-left">
+    <h3 class="intro-text">Find your escape</h3>
+    <p class="intro-tagline">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+    <h6 class="intro-pitch">Scroll down to explore destinations</h6>
   </div>
-
-  <div class="flex-info">
-    <h2 class="location-name">{{location.city}}, {{location.country}}</h2>
-
-    <p class="location-desc">{{location.description}}</p>
-
-    <div class="little-loc-info">
-      <h5 class="language">Language: {{location.language}}</h5>
-      <h5 class="climate">Climate: {{location.climate}}</h5>
-    </div>
-    
+  {{!-- Right box --}}
+  <div class="loc-right">
+    <img src="" alt="Image of beautiful location">
   </div>
-  
 </div>
 
-{{/each}}
+<div class="all-locations">
+  <h3 class="location-header">Latest Posts</h3>
+
+  {{#each locations as |location|}}
+  {{!-- Create location card --}}
+    <div class="location-card">
+      {{!-- Location image (left) --}}
+      <div class="flex-image">
+        <img src="{{location.photo}}" alt="{{location.city}}">
+      </div>
+      {{!-- Location info (right) --}}
+      <div class="flex-info">
+        <h2 class="location-name">{{location.city}}, {{location.country}}</h2>
+        <p class="location-desc">{{location.description}}</p>
+        {{!-- Little details --}}
+        <div class="little-loc-info">
+          <h5 class="language">Language: {{location.language}}</h5>
+          <h5 class="climate">Climate: {{location.climate}}</h5>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>
+
 
 {{!-- ASK: How can we limit the number of results on the page, and add an option to go to the next page? --}}

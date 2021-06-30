@@ -1,5 +1,15 @@
+/* GLOBAL STYLES */
+:root {
+    --neutral-bg: ##f4f0ec;
+    --lightgreen: #E7E5DF;
+    --greenish: #dad8cd;
+    --brown: #453c35;
+}
 * {
     box-sizing: border-box;
+}
+body {
+    background-color: #f1f1ef;
 }
 p {
     font-family: Helvetica, sans-serif;
@@ -24,13 +34,45 @@ a {
 /* MAIN */
 .main-header {
     display: flex;
+    /* flex-direction: column;
+    align-items: center; */
+    border-bottom: 1px solid var(--brown);
     align-items: center;
     justify-content: space-between;
 }
 .ooo-header-logo {
     margin: 0;
+    
 }
-.logo-90 {
+.main-body {
+    border-top: 1px solid var(--brown);
+}
+
+/* MARQUEE */
+@keyframes moveLeft {
+    from { transform: translateX(0%) }
+    to { transform: translateX(-100%) }
+  }
+
+  .marquee {
+    position: relative;
+    display: flex;
+    animation: moveLeft 30s linear infinite;
+    
+  }
+  
+  .track {
+    font-size: 12px;
+    white-space: nowrap;
+    min-width: 100%;
+    text-align: center;
+    line-height:1.2em;
+    color:red;
+    text-transform: uppercase;
+    
+  }
+
+/* .logo-90 {
     height: 99vh;
     border: 1px solid purple;
 }
@@ -41,9 +83,9 @@ a {
 }
 .side-logo {
     border: 1px solid blue;
-    /* position: fixed; */
-}
-.main-content {
+} */
+
+/* .main-content {
     border: 1px solid green;
     width: 100%;
 }
@@ -57,7 +99,7 @@ a {
 }
 .main-body {
     border: 1px solid yellow;
-}
+} */
 
 /* LANDING PAGE */
 .landing-logo {
@@ -90,27 +132,50 @@ a {
 }
 
 /* LOCATION PAGE */
+.location-intro {
+    display: flex;
+    border-bottom: 1px solid var(--brown);
+}
+.loc-left {
+    width: 50%;
+    border-right: 1px solid var(--brown);
+    padding: 10em;
+    text-align: center;
+}
+.loc-right {
+    width: 50%;
+}
+
+
+.all-locations {
+    padding:0 2vw;
+}
+.location-header {
+    border-bottom: 1px solid var(--brown);
+    margin: 2vw 0;
+}
 .location-card {
-    border: 1px solid #454545;
+    border: 1px solid var(--brown);
     margin-bottom: 2em;
     display: flex;
 }
 .flex-image {
-    border:1px solid purple;
-    height: 100%;
-    width: 250px;
+    /* border:1px solid purple; */
+    height: auto;
+    width: 25vw;
+    border-right: 1px solid var(--brown);
 }
 .flex-info {
-    border: 1px solid aqua;
+    /* border: 1px solid aqua; */
     flex: 1;
     padding: 2em;
     transition: .5s ease;
 }
 .flex-info:hover {
-    background-color: pink;
+    background-color: #37342f9a;
 }
 .location-name {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 .little-loc-info {
     display: flex;
