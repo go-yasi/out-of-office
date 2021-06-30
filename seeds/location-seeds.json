@@ -3,14 +3,14 @@
         "city": "London",
         "country": "United Kingdom",
         "description": "London is the capital of the United Kingdom and England. Located along River Thames, London has been a central city since it was founded.",
-        "photo": "./assets/locations/city-of-london.jpg",
+        "photo": "../assets/locations/city-of-london.jpeg",
         "language": "English"
     },
     {
         "city": "Paris",
         "country": "France",
         "description": "Paris (nicknamed the 'City of Light') is the capital city of France, and the largest city in France.",
-        "photo": "./assets/locations/city-of-paris.jpg",
+        "photo": "../assets/locations/city-of-paris.jpeg",
         "language": "French"
     },
     {
@@ -18,21 +18,21 @@
         "state": "California",
         "country": "USA",
         "description": "Los Angeles (L.A.), officially the City of Los Angeles, is the biggest city in California with over 18 million people in the L.A. region.",
-        "photo": "./assets/locations/city-of-los-angeles.jpg",
+        "photo": "../assets/locations/city-of-los-angeles.jpeg",
         "language": "English"
     },
     {
         "city": "Machu Picchu",
         "country": "Peru",
         "description": "Machu Picchu is a 15th-century Inca citadel located in southern Peru. It is located on a 7,970 ft mountain ridge above the Sacred Valley.",
-        "photo": "./assets/locations/city-of-machu-picchu.jpg",
+        "photo": "./assets/locations/city-of-machu-picchu.jpeg",
         "language": "Spanish"
     },
     {
         "city": "Tokyo",
         "country": "Japan",
         "description": "Tokyo is the de facto capital and most populous prefecture of Japan with an estimated population of 13,960,236.",
-        "photo": "./assets/locations/city-of-tokyo.jpg",
+        "photo": "./assets/locations/city-of-tokyo.jpeg",
         "language": "Japanese"
     }
 ]
