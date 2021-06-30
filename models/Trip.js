@@ -26,11 +26,11 @@ Trip.init(
         type: DataTypes.STRING,
         allowNull: false,
     },
-    culture: {
-        type: DataTypes.STRING,
-        allowNull: false,
+    hotel: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
-    sightseeing: {
+    culture: {
         type: DataTypes.STRING,
         allowNull: false,
     },

@@ -1,6 +1,6 @@
 async function newFormHandler(event) {
     event.preventDefault();
-    const locationName = document.querySelector('#location-name').value.trim();
+    const cityName = document.querySelector('#city-name').value.trim();
     const locationDesc = document.querySelector('#location-desc').value.trim();
     const totalTraveller = document.querySelector('#total-traveller').value.trim();
     const tripBudget = document.querySelector('#trip-budget').value.trim();
@@ -9,14 +9,17 @@ async function newFormHandler(event) {
     const foodRec2 = document.querySelector('#food-rec2').value.trim();
     const foodRec3 = document.querySelector('#food-rec3').value.trim();
     const hotel = document.querySelector('#hotel').value.trim();
-    const activities = document.querySelector('#activites').value.trim();
+    const activeActivities = document.querySelector('#active-activites').value.trim();
+    const relaxingActivities = document.querySelector('#relaxing-activites').value.trim();
     const cultureSight = document.querySelector('#culture-sight').value.trim();
+    const shopping = document.querySelector('#shopping').value.trim();
+    const allowPets = document.querySelector('#allow-pets').value.trim();
     
     // Send fetch request to add a new trip
     const response = await fetch(`/api/trip`, {
       method: 'POST',
       body: JSON.stringify({
-        locationName,
+        cityName,
         locationDesc,
         totalTraveller,
         tripBudget,
@@ -25,8 +28,11 @@ async function newFormHandler(event) {
         foodRec2,
         foodRec3,
         hotel,
-        activities,
+        activeActivities,
+        relaxingActivities,
         cultureSight,
+        shopping,
+        allowPets,
       }),
       headers: {
         'Content-Type': 'application/json',
@@ -40,3 +46,6 @@ async function newFormHandler(event) {
 }
   
   document.querySelector('.trip-form').addEventListener('submit', newFormHandler);
+
+  // make a function to either add to existing location in location table
+  // or if destination city = false then create a location

@@ -49,7 +49,7 @@ const signUpFormHandler = async (event) => {
   });
 
   if (response.ok) {
-    document.location.replace('/');
+    document.location.replace('/api/location');
   } else {
     alert('Failed to log in ☹︎');
   }
@@ -59,7 +59,7 @@ const signUpFormHandler = async (event) => {
 document
   .querySelector('.login-form')
   // when I submit the form that has a class of login-form, run the function
-  .addEventListener('submit1', loginFormHandler);
+  .addEventListener('submit', loginFormHandler);
 
-document.querySelector('.signup-form').addEventListener('submit2', signUpFormHandler);
+document.querySelector('.signup-form').addEventListener('submit', signUpFormHandler);
   
