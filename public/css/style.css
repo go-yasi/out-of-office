@@ -7,6 +7,7 @@ a {
     text-decoration: none;
 }
 
+/* LANDING PAGE */
 .logo {
     width: 100vw;
     position: fixed;
@@ -36,3 +37,39 @@ a {
     font-size: 1.4vw;
 }
 
+/* LOGIN + SIGNUP PAGE */
+.login-row {
+    display: flex;
+    justify-content: space-around;
+}
+.half-col {
+    border: 1px solid blue;
+    box-sizing: border-box;
+    width: 45vw;
+    padding: 0 2em;
+    text-align: center;
+}
+.login-title {
+    text-align: center;
+}
+.login-form, .signup-form {
+    display: flex;
+    flex-direction: column;
+}
+.form-group {
+    margin-top: 1.234em;
+}
+input {
+    text-align: center;
+    color: gray;
+    font-family: Helvetica;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.form-input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid gray;
+}
