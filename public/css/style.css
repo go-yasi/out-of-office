@@ -5,6 +5,16 @@
     --greenish: #dad8cd;
     --brown: #453c35;
 }
+
+@font-face {
+    font-family: 'Compagnon';
+    src: url("../assets/fonts/Compagnon-Italic.woff") format("woff");
+    src: url("../assets/fonts/Compagnon-Italic.woff2") format("woff2");
+}
+@font-face {
+    font-family: 'Hai';
+    src: url("../assets/fonts/Haigrast.otf") format("otf");
+}
 * {
     box-sizing: border-box;
     font-family: Helvetica, sans-serif;
@@ -19,9 +29,13 @@ p {
     font-family: Helvetica, sans-serif;
     font-weight: 300;
 }
-
 a {
     text-decoration: none;
+}
+h6 {
+     font-size: 11px;
+     letter-spacing: .1em;
+     text-transform: uppercase;
 }
 .btn, .navguy {
     border-radius: 0;
@@ -35,6 +49,12 @@ a {
 }
 
 /* MAIN */
+@keyframes rotate-hue {
+    0% {filter: hue-rotate(10deg);}
+    50% {filter: hue-rotate(-30deg);}
+    100% {filter: hue-rotate(20deg);}
+}
+
 .main-header {
     display: flex;
     /* flex-direction: column;
@@ -42,11 +62,18 @@ a {
     border-bottom: 1px solid var(--brown);
     align-items: center;
     justify-content: space-between;
+    background: rgb(34,71,195);
+    background: radial-gradient(circle, rgb(90, 110, 175) 0%, rgba(107,164,167,1) 26%, rgb(146, 155, 144) 50%, rgb(108, 146, 104) 75%, rgb(109, 155, 167) 100%);
+    background-size: 300%;
+    background-position: bottom left;
+    animation: rotate-hue 4s linear 0ms infinite;
     
 }
 .ooo-header-logo {
     margin: 0;
-    
+    font-family: 'Compagnon';
+    font-size: 22px;
+    margin: .5em;
 }
 .main-body {
     border-top: 1px solid var(--brown);
@@ -71,11 +98,11 @@ footer {
 .marquee {
     position: relative;
     display: flex;
-    animation: moveLeft 30s linear infinite;
+    animation: moveLeft 35s linear infinite;
 }
 
 .track {
-    font-size: 12px;
+    font-size: 12px !important;
     white-space: nowrap;
     min-width: 100%;
     text-align: center;
@@ -119,15 +146,20 @@ footer {
 .location-intro {
     display: flex;
     border-bottom: 1px solid var(--brown);
+    min-height:initial !important;
+    overflow-x: hidden !important;
+    overflow-y:hidden;
 }
 .loc-left {
     width: 50%;
-    border-right: 1px solid var(--brown);
+    
     padding: 10em;
     text-align: center;
+    align-self: center;
 }
 .loc-right {
     width: 50%;
+    border-left: 1px solid var(--brown);
 }
 
 
@@ -145,15 +177,22 @@ footer {
 }
 .flex-image {
     /* border:1px solid purple; */
-    height: auto;
-    width: 25vw;
+    flex: 0 1 auto;
     border-right: 1px solid var(--brown);
+}
+.loc-image {
+    width: 500px;
+    height: auto;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 3px;
 }
 .flex-info {
     /* border: 1px solid aqua; */
     flex: 1;
     padding: 2em;
     transition: .5s ease;
+    align-self: center;
 }
 .flex-info:hover {
     background-color: #37342f9a;
@@ -164,6 +203,7 @@ footer {
 .little-loc-info {
     display: flex;
     justify-content: space-between;
+    margin-top: 1em;
 }
 
 /* LOGIN + SIGNUP PAGE */

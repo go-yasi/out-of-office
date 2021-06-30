@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="306" viewBox="0 0 1680 306">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(255,255,255,0.71);
+        font-size: 216px;
+        font-family: Satoshi-Black, Satoshi;
+        font-weight: 800;
+      }
+    </style>
+  </defs>
+  <text id="Out_of_Office" data-name="Out of Office" class="cls-1" transform="translate(0 248)"><tspan x="0" y="0">OUT OF OFFICE</tspan></text>
+</svg>
