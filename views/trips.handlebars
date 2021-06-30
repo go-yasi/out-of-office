@@ -1,15 +1,51 @@
+<div class="trips-intro">
 
-<div class="location-trip-post">
-  <img src="(result.info.url)" class="user-photo" alt="...">
+    <img class="compass-logo" src="../../assets/landing/compass-logo.png" alt="compass graphic">
+    <h3 class="intro-text">Destination: </br>{{city}}, {{country}}</h3>
+
+</div>
+
+
+<div class="all-trips">
+  <h6 class="trips-header">All user posts for {{city}}</h6>
+
+  {{#each location_users as |show|}}
+  <a href="/api/trip/{{show.trip.id}}">
+    {{!-- Create trip card --}}
+      <div class="trip-card">
+        {{!-- Trip image (top) --}}
+        <div class="trip-image-block">
+          <img class="trip-image" src="{{location.photo}}" alt="{{location.city}}">
+        </div>
+        {{!-- Trip info (bottom) --}}
+        <div class="trip-preview-info">
+          <p class="location-desc">{{show.trip.description}}</p>
+          {{!-- Little details --}}
+          <div class="little-trip-info">
+            <h6 class="username">@{{show.username}}</h6>
+            <h6 class="budget">Budget: {{show.trip.budget}}</h6>
+          </div>
+        </div>
+      </div>
+    </a>
+  {{/each}}
+</div>
+
+{{!-- <div class="location-trip-post">
+  <img src="{{result.info.url}}" class="user-photo" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
-    <p class="card-text trip-description">{{trip.description}}</p>
+    <p class="card-text trip-description">{{description}}</p>
+    {{#each location_users as |sample|}}
+    <p>{{sample.username}}</p>
+    <p>{{sample.trip.budget}}</p>
+    {{/each}}
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item trip-userName">{{user.username}}</li>
+    <li class="list-group-item trip-userName">{{location_users[0].trip.hotel}}</li>
     <li class="list-group-item trip-budget">{{trip.budget}}</li>
   </ul>
   <div class="card-body">
     <a href="/post" class="card-link">Read More</a>
   </div>
-</div>
+</div> --}}
