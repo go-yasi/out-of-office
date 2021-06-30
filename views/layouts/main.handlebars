@@ -6,35 +6,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Out of Office</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏝</text></svg>">
+  <link rel="stylesheet" type="text/css" href="/css/reset.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
 <body>
-  {{!-- {{#if logged_in}} --}}
+
   <header class="main-header">
-  
-    <h1 class="ooo-header-logo">
-      Out of Office
-    </h1>
+    <div class="main-logo">
+      <h1 class="ooo-header-logo">
+        Out of Office
+      </h1>
+    </div>
+    
 
     <nav>
-      <a href="/location" class="btn">Home</a>
-      <a href="/share" class="btn">+ New Post</a>
-      <button class="btn" id="logout">Logout</button>
+      <a href="/api/location" class="navguy">Home</a>
+      <a href="/api/share" class="navguy">+ New Post</a>
+      <button class="btn navguy" id="logout">Logout</button>
     </nav>
 
+    
+
   </header>
-  {{!-- {{/if}} --}}
+
+  <section class="scroll">
+      <div class="marquee">
+    <div class="track">
+      <p>Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind    —Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind    —</p>
+    </div>
+  </div>
+
+  </section>
+
+
 
   <main class="main-body">
     {{{ body }}}
   </main>
+  
 
-  <footer>
-  </footer>
-
-  <!-- Only include the logout script if the user is logged in -->
+  <!-- Only include if user is logged in -->
   {{#if logged_in}}
+  <footer>
+    <div class="credits">
+      <p>Proudly created by
+        <a href="https://github.com/go-yasi">Yasi</a>
+        <a href="https://github.com/AyoTai">Tai</a>
+        <a href="https://github.com/henryparras24">Henry</a>
+        and
+        <a href="https://github.com/jojonah1812">Jonah</a>
+      </p>
+    </div>
+  </footer>
+  
   <script src="/js/logout.js"></script>
   {{/if}}
 
