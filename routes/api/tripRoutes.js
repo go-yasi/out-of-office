@@ -33,6 +33,7 @@ router.get('/:id', withAuth, async (req, res) => {
 
 router.post('/', withAuth, async (req, res) => {
   try {
+    console.log(req.body)
     const shareData = await Trip.create({...req.body, user_id: req.session.user_id});
     res.status(200).json(shareData);
   } catch (err) {

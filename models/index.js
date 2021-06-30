@@ -13,16 +13,6 @@ Location.hasMany(Trip, {
     foreignKey: 'trip_id',
 });
 
-// TRIP - PHOTOS association
-Trip.hasMany(Photos, {
-    foreignKey: 'trip_id',
-    onDelete: 'CASCADE',
-});
-
-Photos.belongsTo(Trip, {
-    foreignKey: 'trip_id',
-});
-
 // USER - LOCATION association
 User.belongsToMany(Location, {
     through: {
