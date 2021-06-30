@@ -4,11 +4,11 @@
     Tell us about your trip!!!
   </h2>
   <form class="trip-form">
-    <label for="location-name">
-      Destination:
+    <label for="city-name">
+      Destination City:
     </label>
     <br />
-    <textarea id="location-name" name="location-name" rows="2" cols="30">
+    <textarea id="city-name" name="city-name" rows="2" cols="30">
     </textarea>
     <br />
     <label for="description">
@@ -59,11 +59,18 @@
     <textarea id="hotel" name="hotel" rows="2" cols="30">
     </textarea>
     <br />
-     <label for="activities">
-      Favorite Activities:
+     <label for="acitve-activities">
+      Favorite Active Activity:
     </label>
     <br />
-    <textarea id="activities" name="activities" rows="2" cols="30">
+    <textarea id="acitve-activities" name="acitve-activities" rows="2" cols="30">
+    </textarea>
+    <br />
+    <label for="relaxing-activities">
+      Favorite Relaxing Activity:
+    </label>
+    <br />
+    <textarea id="relaxing-activities" name="relaxing-activities" rows="2" cols="30">
     </textarea>
     <br />
      <label for="culture-sight">
@@ -72,6 +79,21 @@
     <br />
     <textarea id="culture-sight" name="culture-sight" rows="2" cols="30">
     </textarea>
+    <br />
+     <label for="shopping">
+      Favorite Shopping Spot:
+    </label>
+    <br />
+    <textarea id="shopping" name="shopping" rows="2" cols="30">
+    </textarea>
+    <br />
+    <div class="form-group">
+    <label for="allow-pets">Do the allow pets?</label>
+    <select class="form-control" id="allow-pets">
+      <option>Yes</option>
+      <option>No</option>
+    </select>
+  </div>
     <br />
     <button type="submit" value="Submit">
       Submit
