@@ -57,6 +57,3 @@ async function newFormHandler(event) {
 
 
 document.querySelector('.trip-form').addEventListener('submit', newFormHandler);
-
-
-
