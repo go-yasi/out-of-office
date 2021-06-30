@@ -2,12 +2,12 @@ const router = require('express').Router();
 const {Location, Photos, Trip, User } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-router.get('/', async (req, res) => {
+router.get('/', withAuth, async (req, res) => {
   try {
     const locationData = await Location.findAll();
     const locations = locationData.map((location) => 
     location.get({plain: true}));
-    res.render('share', {locations});
+    res.render('share', {locations, loggedIn: req.session.loggedIn,});
   } catch (err) {
     res.status(500).json(err);
   }
