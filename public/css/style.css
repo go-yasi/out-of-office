@@ -6,8 +6,30 @@ p {
 a {
     text-decoration: none;
 }
+.btn {
+    border-radius: 0;
+    border: 0;
+    padding: .5em 1em;
+    background-color: rgb(239, 239, 239);
+    font-family: Arial, sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 14px;
+}
 
-.logo {
+/* MAIN HEADER */
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ooo-header-logo {
+    margin: 0;
+}
+
+/* LANDING PAGE */
+.landing-logo {
     width: 100vw;
     position: fixed;
     top: -5vw;
@@ -36,3 +58,46 @@ a {
     font-size: 1.4vw;
 }
 
+/* LOGIN + SIGNUP PAGE */
+.login-row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4vw;
+}
+.half-col {
+    border: 1px solid blue;
+    box-sizing: border-box;
+    width: 45vw;
+    padding: 0 2em;
+    text-align: center;
+}
+.login-title {
+    text-align: center;
+}
+.login-form, .signup-form {
+    display: flex;
+    flex-direction: column;
+}
+.form-group {
+    margin-top: 2em;
+}
+input {
+    text-align: center;
+    color: gray;
+    font-family: Helvetica;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.form-input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid gray;
+    width: 20vw;
+}
+.login-btn, .signup-btn {
+    border-radius: 0;
+    border: 0;
+    padding: .5em 1em;
+}
