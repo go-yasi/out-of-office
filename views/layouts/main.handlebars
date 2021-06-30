@@ -11,25 +11,24 @@
 
 <body>
   {{!-- {{#if logged_in}} --}}
-  <header class="main-header">
+<div class="whole-page">
+    <div class="side-logo">
+        <img src=".../assets/landing/ooo-logo-90.png" alt="Out of Office logo in bold lettering" class="logo-90">
+    </div>
+
+    <div class="main-content">
+        <nav class="main-nav">
+            <a href="/location" class="navguy btn">Home</a>
+            <a href="/share" class="navguy btn">+ New Post</a>
+            <button class="navguy btn" id="logout">Logout</button>
+        </nav>
+{{!-- {{/if}} --}}
+        <div class="main-body">
+        {{{ body }}}
+        </div>
+    </div>
+</div>
   
-    <h1 class="ooo-header-logo">
-      Out of Office
-    </h1>
-
-    <nav>
-      <a href="/location" class="btn">Home</a>
-      <a href="/share" class="btn">+ New Post</a>
-      <button class="btn" id="logout">Logout</button>
-    </nav>
-
-  </header>
-  {{!-- {{/if}} --}}
-
-  <main class="main-body">
-    {{{ body }}}
-  </main>
-
   <footer>
   </footer>
 

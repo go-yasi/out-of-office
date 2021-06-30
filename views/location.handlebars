@@ -1,18 +1,25 @@
 
+<h3 class="location-header">Latest Posts</h3>
 {{#each locations as |location|}}
 
 <div class="location-card">
-  <h2 class="location-name">
-    {{location.city}}, {{location.country}}
-  </h2>
-  <p class="location-desc">
-    {{location.description}}
-  </p>
-  <img src="{{location.photo}}" alt="{{location.city}}">
-  <p class="language">
-    {{location.language}}
-  </p>
-  <div class="climate">{{location.climate}}</div>
+
+  <div class="flex-image">
+    <img src="{{location.photo}}" alt="{{location.city}}">
+  </div>
+
+  <div class="flex-info">
+    <h2 class="location-name">{{location.city}}, {{location.country}}</h2>
+
+    <p class="location-desc">{{location.description}}</p>
+
+    <div class="little-loc-info">
+      <h5 class="language">Language: {{location.language}}</h5>
+      <h5 class="climate">Climate: {{location.climate}}</h5>
+    </div>
+    
+  </div>
+  
 </div>
 
 {{/each}}

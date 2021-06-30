@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 p {
     font-family: Helvetica, sans-serif;
     font-weight: 300;
@@ -18,7 +21,7 @@ a {
     font-size: 14px;
 }
 
-/* MAIN HEADER */
+/* MAIN */
 .main-header {
     display: flex;
     align-items: center;
@@ -26,6 +29,34 @@ a {
 }
 .ooo-header-logo {
     margin: 0;
+}
+.logo-90 {
+    height: 99vh;
+    border: 1px solid purple;
+}
+.whole-page {
+    display: flex;
+    border: 1px solid red;
+    position: relative;
+}
+.side-logo {
+    border: 1px solid blue;
+    /* position: fixed; */
+}
+.main-content {
+    border: 1px solid green;
+    width: 100%;
+}
+.main-nav {
+    border: 1px solid pink;
+    display:flex;
+    justify-content: flex-end;
+}
+.navguy {
+    margin-left: 1em;
+}
+.main-body {
+    border: 1px solid yellow;
 }
 
 /* LANDING PAGE */
@@ -56,6 +87,34 @@ a {
     letter-spacing: .08em;
     text-transform: uppercase;
     font-size: 1.4vw;
+}
+
+/* LOCATION PAGE */
+.location-card {
+    border: 1px solid #454545;
+    margin-bottom: 2em;
+    display: flex;
+}
+.flex-image {
+    border:1px solid purple;
+    height: 100%;
+    width: 250px;
+}
+.flex-info {
+    border: 1px solid aqua;
+    flex: 1;
+    padding: 2em;
+    transition: .5s ease;
+}
+.flex-info:hover {
+    background-color: pink;
+}
+.location-name {
+    text-transform: uppercase;
+}
+.little-loc-info {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* LOGIN + SIGNUP PAGE */
