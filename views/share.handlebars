@@ -4,100 +4,79 @@
     Tell us about your trip!!!
   </h2>
   <form class="trip-form">
-    <label for="city-name">
-      Destination City:
-    </label>
-    <br />
-    <textarea id="city-name" name="city-name" rows="2" cols="30">
-    </textarea>
-    <br />
-    <label for="description">
-      Description:
-    </label>
-    <br />
-    <textarea id="location-desc" name="location-desc" rows="5" cols="30">
-    </textarea>
-    <br />
-    <label for="total-traveller">
-      Total travellers:
-    </label>
-    <br />
-    <textarea id="total-traveller" name="total-traveller" rows="2" cols="30">
-    </textarea>
-    <br />
-    <label for="budget">
-      Budget:
-    </label>
-     <br />
-    <textarea id="trip-budget" name="trip-budget" rows="2" cols="30">
-    </textarea>
-    <br />
-    <label for="cloud-pic">
-      Upload Pictures:
-    </label>
-    <br />
-    <textarea id="cloud-pic" name="cloud-pic" rows="2" cols="30">
-    </textarea>
-    <br />
-    <label for="food-rec">
-      Your Top 3 Restaurant Recommendations:
-    </label>
-    <br />
-    <textarea id="food-rec1" name="food-rec1" rows="2" cols="30">
-    </textarea>
-    <br />
-     <textarea id="food-rec2" name="food-rec2" rows="2" cols="30">
-    </textarea>
-    <br />
-     <textarea id="food-rec3" name="food-rec3" rows="2" cols="30">
-    </textarea>
-    <br />
-    <label for="hotel">
-      Where did you stay at?:
-    </label>
-    <br />
-    <textarea id="hotel" name="hotel" rows="2" cols="30">
-    </textarea>
-    <br />
-     <label for="acitve-activities">
-      Favorite Active Activity:
-    </label>
-    <br />
-    <textarea id="acitve-activities" name="acitve-activities" rows="2" cols="30">
-    </textarea>
-    <br />
-    <label for="relaxing-activities">
-      Favorite Relaxing Activity:
-    </label>
-    <br />
-    <textarea id="relaxing-activities" name="relaxing-activities" rows="2" cols="30">
-    </textarea>
-    <br />
-     <label for="culture-sight">
-      Favorite Cultural Sight:
-    </label>
-    <br />
-    <textarea id="culture-sight" name="culture-sight" rows="2" cols="30">
-    </textarea>
-    <br />
-     <label for="shopping">
-      Favorite Shopping Spot:
-    </label>
-    <br />
-    <textarea id="shopping" name="shopping" rows="2" cols="30">
-    </textarea>
-    <br />
+
+    <label for="city-name">Destination City:</label>
+    <br/>
+    <input class="share-input" id="city-name" name="city-name"></input>
+    <br/>
+
+    <label for="description">Description:</label>
+    <br/>
+    <input id="location-desc" name="location-desc"></input>
+    <br/>
+
+    <label for="total-traveller">Total travellers:</label>
+    <br/>
+    <input id="total-traveller" name="total-traveller"</input>
+    <br/>
+
+    <label for="budget">Budget:</label>
+     <br/>
+    <input id="trip-budget" name="trip-budget"></input>
+    <br/>
+
+    <label for="cloud-pic">Upload Pictures:</label>
+    <br/>
+    <input id="cloud-pic" name="cloud-pic"></input>
+    <br/>
+
+    <label for="food-rec">Your Top 3 Restaurant Recommendations:</label>
+    <br/>
+    <input id="food-rec1" name="food-rec1"></input>
+    <br/>
+    <input id="food-rec2" name="food-rec2"></input>
+    <br/>
+    <input id="food-rec3" name="food-rec3"></input>
+    <br/>
+
+    <label for="hotel">Where did you stay at?:</label>
+    <br/>
+    <input id="hotel" name="hotel"></input>
+    <br/>
+    
+    <label for="acitve-activities">Favorite Active Activity:</label>
+    <br/>
+    <input id="acitve-activities" name="acitve-activities"></input>
+    <br/>
+
+    <label for="relaxing-activities">Favorite Relaxing Activity:</label>
+    <br/>
+    <input id="relaxing-activities" name="relaxing-activities"></input>
+    <br/>
+
+    <label for="culture-sight">Favorite Cultural Sight:</label>
+    <br/>
+    <input id="culture-sight" name="culture-sight"></input>
+    <br/>
+
+    <label for="shopping">Favorite Shopping Spot:</label>
+    <br/>
+    <input id="shopping" name="shopping"></input>
+    <br/>
+
     <div class="form-group">
-    <label for="allow-pets">Do the allow pets?</label>
-    <select class="form-control" id="allow-pets">
-      <option>Yes</option>
-      <option>No</option>
-    </select>
-  </div>
-    <br />
-    <button type="submit" value="Submit">
-      Submit
-    </button>
+      <label for="allow-pets">Is this a pet-friendly destination?</label>
+      </br>
+      <select class="form-control" id="allow-pets">
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div>
+    <br/>
+
+    <button type="submit" value="Submit">Submit</button>
+    
   </form>
 </div>
+
 <script src="/js/share.js"></script>

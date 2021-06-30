@@ -45,6 +45,9 @@
     {{{ body }}}
   </main>
   
+
+  <!-- Only include if user is logged in -->
+  {{#if logged_in}}
   <footer>
     <div class="credits">
       <p>Proudly created by
@@ -56,9 +59,7 @@
       </p>
     </div>
   </footer>
-
-  <!-- Only include the logout script if the user is logged in -->
-  {{#if logged_in}}
+  
   <script src="/js/logout.js"></script>
   {{/if}}
 

@@ -84,34 +84,6 @@ footer {
     text-transform: uppercase;
 }
 
-/* .logo-90 {
-    height: 99vh;
-    border: 1px solid purple;
-}
-.whole-page {
-    display: flex;
-    border: 1px solid red;
-    position: relative;
-}
-.side-logo {
-    border: 1px solid blue;
-} */
-
-/* .main-content {
-    border: 1px solid green;
-    width: 100%;
-}
-.main-nav {
-    border: 1px solid pink;
-    display:flex;
-    justify-content: flex-end;
-}
-.navguy {
-    margin-left: 1em;
-}
-.main-body {
-    border: 1px solid yellow;
-} */
 
 /* LANDING PAGE */
 .landing-logo {
@@ -201,10 +173,10 @@ footer {
     margin-top: 4vw;
 }
 .half-col {
-    border: 1px solid blue;
+    border: 1px solid var(--brown);
     box-sizing: border-box;
     width: 45vw;
-    padding: 0 2em;
+    padding: 2em;
     text-align: center;
 }
 .login-title {
@@ -220,6 +192,7 @@ footer {
 input {
     text-align: center;
     color: gray;
+    background-color: transparent;
     font-family: Helvetica;
     font-weight: 300;
     letter-spacing: 0.1em;
@@ -234,6 +207,22 @@ input {
 }
 .login-btn, .signup-btn {
     border-radius: 0;
-    border: 0;
-    padding: .5em 1em;
+    border: none;
+    background-color: var(--brown);
+    color: white;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.login-btn:hover, .signup-btn:hover {
+    background-color: var(--greenish);
+}
+
+/* SHARE FORM PAGE */
+.trip-form {
+    border: 1px solid var(--brown);
+    padding: 2em;
+    margin: 1vw 4vw;
+    text-align: left;
 }
