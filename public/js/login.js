@@ -15,7 +15,7 @@ const loginFormHandler = async (event) => {
     });
   
     if (response.ok) {
-      document.location.replace('/');
+      document.location.replace('/api/location');
     } else {
       alert('Failed to log in ☹︎');
     }
@@ -35,7 +35,7 @@ const signUpFormHandler = async (event) => {
   const bio = document.querySelector('#bio-signup').value.trim();
   
   
-  const response = await fetch('/api/users/login', {
+  const response = await fetch('/api/users', {
     method: 'POST',
     body: JSON.stringify({
       name,

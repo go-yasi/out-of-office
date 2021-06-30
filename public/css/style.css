@@ -62,11 +62,7 @@ h6 {
     border-bottom: 1px solid var(--brown);
     align-items: center;
     justify-content: space-between;
-    background: rgb(34,71,195);
-    background: radial-gradient(circle, rgb(90, 110, 175) 0%, rgba(107,164,167,1) 26%, rgb(146, 155, 144) 50%, rgb(108, 146, 104) 75%, rgb(109, 155, 167) 100%);
-    background-size: 300%;
-    background-position: bottom left;
-    animation: rotate-hue 4s linear 0ms infinite;
+    
     
 }
 .ooo-header-logo {
