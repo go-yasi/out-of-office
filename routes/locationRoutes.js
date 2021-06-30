@@ -4,9 +4,10 @@
 
 const router = require('express').Router();
 const { Location, User, Trip } = require('../models');
+const withAuth = require('../utils/auth');
 
 // GET all locations // works
-router.get('/', async (req, res) => {
+router.get('/', withAuth, async (req, res) => {
     try {
         const locationData = await Location.findAll({
             include: [{ model: User, through: Trip, as:'location_users' }]
@@ -15,15 +16,15 @@ router.get('/', async (req, res) => {
         location.get({plain: true}));
         res.render('location', {
             locations,
-            // loggedIn: req.session.loggedIn,
-          });
+            loggedIn: req.session.loggedIn,
+        });
     } catch (err) {
         res.status(500).json(err);
     }
 });
 
 // GET a location by id 
-router.get('/:id', async (req, res) => {
+router.get('/:id', withAuth, async (req, res) => {
     try {
         const locationData = await Location.findByPk(req.params.id, {
             include: [{ model: User, through: Trip, as: 'location_users'}]
@@ -36,7 +37,7 @@ router.get('/:id', async (req, res) => {
         
         // res.status(200).json(locations);
         console.log(locations);
-        res.render('trips', locations);
+        res.render('trips', locations, {loggedIn: req.session.loggedIn});
     } catch (err) {
         res.status(500).json(err);
     }
