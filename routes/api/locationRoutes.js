@@ -5,19 +5,24 @@
 const router = require('express').Router();
 const { Location, User, Trip } = require('../../models');
 
-// GET all locations
+// GET all locations // works
 router.get('/', async (req, res) => {
     try {
-        const locationData = await Location.findAll(
-            {include: [{ model: User, through: Trip }]}
-        );
-        res.status(200).json(locationData);
+        const locationData = await Location.findAll({
+            include: [{ model: User, through: Trip, as:'location_users' }]
+        });
+        const locations = locationData.map((location) => 
+        location.get({plain: true}));
+        res.render('location', {
+            locations,
+            // loggedIn: req.session.loggedIn,
+          });
     } catch (err) {
         res.status(500).json(err);
     }
 });
 
-// GET a location by id
+// GET a location by id //
 router.get('/:id', async (req, res) => {
     try {
         const locationData = await Location.findByPk(req.params.id, {
@@ -28,6 +33,9 @@ router.get('/:id', async (req, res) => {
             res.status(404).json({ message: 'No location found with this ID!' });
             return;
         }
+        const locations = locationData.map((location) => 
+        location.get({plain: true}));
+        
         res.status(200).json(locationData);
     } catch (err) {
         res.status(500).json(err);

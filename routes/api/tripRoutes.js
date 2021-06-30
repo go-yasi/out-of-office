@@ -2,19 +2,23 @@ const router = require('express').Router();
 const { Trip, User } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-// Get a trip
-router.get('/location/:id', withAuth, async (req, res) => {
-  try {
-    const tripData = await Trip.findAll({
-        where: { location_id: req.params.id,
-        include: [{ model: Location, through: User }]
-        },
-    });
-    res.status(200).json(tripData);
-  } catch (err) {
-    res.status(400).json(err);
-  }
-});
+// Get a trip   /// reffer to location by id
+// router.get('/location/:id', async (req, res) => {
+//   try {
+//     const tripData = await Trip.findAll({
+//         where: { trip_id: req.params.id,
+//         include: [{ model: Location }]
+//         },
+//     });
+//     const trips = tripData.get({plain: true});
+//     res.render('trip', { 
+//       trips, 
+//       // loggedIn: req.session.loggedIn 
+//     });
+//   } catch (err) {
+//     res.status(400).json(err);
+//   }
+// });
 
 router.get('/:id', withAuth, async (req, res) => {
     try {
