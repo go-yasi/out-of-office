@@ -5,7 +5,7 @@
   </h2>
   <form class="trip-form">
 
-    <label for="city-name">Destination City:</label>
+    <label for="city-name">Select the Destination City:</label>
     <br/>
     <select class="share-input" id="city-name" name="city-name">
       {{#each locations as |location|}}
@@ -14,7 +14,7 @@
     </select>
     <br/>
 
-    <label for="description">Description:</label>
+    <label for="description">Description<span class="form-req">*</span>:</label>
     <br/>
     <input id="location-desc" name="location-desc"></input>
     <br/>
@@ -48,9 +48,9 @@
     <input id="hotel" name="hotel"></input>
     <br/>
     
-    <label for="acitve-activities">Favorite Active Activity:</label>
+    <label for="active-activities">Favorite Active Activity:</label>
     <br/>
-    <input id="acitve-activities" name="acitve-activities"></input>
+    <input id="active-activities" name="acitve-activities"></input>
     <br/>
 
     <label for="relaxing-activities">Favorite Relaxing Activity:</label>
