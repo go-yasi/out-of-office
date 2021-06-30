@@ -39,7 +39,7 @@ async function newFormHandler(event) {
       },
     });
     if (response.ok) {
-      document.location.replace('/api/location');
+      document.location.replace('/location');
     } else {
       alert('Failed to add trip');
     }
