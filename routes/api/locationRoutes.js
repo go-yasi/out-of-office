@@ -22,7 +22,7 @@ router.get('/', async (req, res) => {
     }
 });
 
-// GET a location by id // ???
+// GET a location by id 
 router.get('/:id', async (req, res) => {
     try {
         const locationData = await Location.findByPk(req.params.id, {

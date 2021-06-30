@@ -1,0 +1,68 @@
+[
+    {
+        "description":"We took a great trip with our family to London!",
+        "budget": 2400,
+        "total_travelers":5,
+        "restaurant_rec1":"Heliot Steak House",
+        "hotel": "The Connaught",
+        "culture":"",
+        "active_activities":"Westminster Abbey, The London Eye",
+        "relaxing_activities":"",
+        "shopping":"Harrods",
+        "allow_pets": true,
+        "location_id":1
+        
+    },
+    {
+        "description":"This was our second trip to London so we were looking for a trip that was more focused on relaxation.  ",
+        "budget": 4200,
+        "total_travelers":2,
+        "restaurant_rec1":"Denny's",
+        "hotel":"The Waldorf Hilton",
+        "culture":"The West End",
+        "active_activities":"",
+        "relaxing_activities":"Hyde Park, Kensington Gardens, Regents Park, Cruise on the River Thames",
+        "shopping":"Bond Street, Harrods",
+        "allow_pets":false,
+        "location_id":1
+    },
+    {
+        "description":"Our dream trip has always been to visit Paris.  There was so much culture, history, and amazing dining around every corner!",
+        "budget": 6000,
+        "total_travelers":2,
+        "restaurant_rec1":"McDonalds",
+        "hotel":"Pavillon Monceau Hotel",
+        "culture":"",
+        "active_activities":"Eiffel Tower, Arc De Triomphe",
+        "relaxing_activities":"Sit and enjoy the scenery at  Au Vieux Paris.",
+        "shopping":"Via dei Condotti",
+        "allow_pets": true,
+        "location_id":2
+    },
+    {
+        "description":"Los Angeles",
+        "budget": 1800,
+        "total_travelers":4,
+        "restaurant_rec1":"Carnitas el Momo",
+        "hotel":"Freehand Los Angeles",
+        "culture":"The Getty",
+        "active_activities":"",
+        "relaxing_activities":"Descanso Gardens",
+        "shopping":"Grand Central Market",
+        "allow_pets": true,
+        "location_id":3
+    },
+    {   
+        "description":"Machu Picchu",
+        "budget": 3800,
+        "total_travelers":4,
+        "restaurant_rec1":"Olive Garden",
+        "hotel":"Hotel Vista Machu Picchu",
+        "culture":"Moray",
+        "active_activities":"Huayna Picchu",
+        "relaxing_activities":"Laguna Humantay",
+        "shopping":"",
+        "allow_pets":false,
+        "location_id":4
+    }
+]
