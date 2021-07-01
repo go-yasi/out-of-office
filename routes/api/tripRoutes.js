@@ -25,6 +25,7 @@ router.get('/:id', withAuth, async (req, res) => {
       const tripData = await Trip.findByPk(req.params.id, {
           include: [{ model: Location, model: User }]
       });
+      // add a render similar to location by id, renders post.handlebars page but the url is trip/:id
       res.status(200).json(tripData);
     } catch (err) {
       res.status(400).json(err);
