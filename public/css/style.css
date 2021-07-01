@@ -34,6 +34,7 @@ p {
 }
 a {
     text-decoration: none;
+    color: var(--brown);
 }
 h6 {
      font-size: 11px;
@@ -195,6 +196,10 @@ footer {
     border: 1px solid var(--brown);
     margin-bottom: 2em;
     display: flex;
+    transition: .5s ease;
+}
+.location-card:hover {
+    background-color: #a096859a;
 }
 .flex-image {
     /* border:1px solid purple; */
@@ -215,9 +220,9 @@ footer {
     transition: .5s ease;
     align-self: center;
 }
-.flex-info:hover {
+/* .flex-info:hover {
     background-color: #37342f9a;
-}
+} */
 .location-name {
     font-size: 2vw;
     line-height: 1.2;
@@ -225,9 +230,12 @@ footer {
     font-family: 'Mono';
 }
 .little-loc-info {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     margin-top: 1em;
+}
+.climate {
+    margin-top:.5em;
 }
 
 /* LOGIN + SIGNUP PAGE */
@@ -291,7 +299,57 @@ input {
 /* SHARE FORM PAGE */
 .trip-form {
     border: 1px solid var(--brown);
-    padding: 2em;
-    margin: 1vw 4vw;
+    padding: 4em;
+    margin: 2vw 6vw;
     text-align: left;
+}
+.share-form-header {
+    font-family: 'Cursive';
+    font-size: 4vw;
+    text-align: center;
+}
+.share-input {
+    color: red;
+    text-transform: none;
+    text-align: left;
+}
+
+
+/* TRIPS PAGE */
+.trips-intro {
+    text-align: center;
+    margin-bottom: 2vw;
+    border-bottom: 1px solid var(--brown);
+}
+.plane {
+    width: 125px;
+}
+.all-trips {
+    display: flex;
+    text-align: center;
+}
+.trip-image {
+    border: 1px solid var(--brown);
+    width: 35vw;
+    height: 35vw;
+}
+.trip-card {
+    /* border: 1px solid blue; */
+    width: 40vw;
+    margin: 0 2vw 2vw;
+}
+.trip-preview-info {
+    margin-top: 1em;
+}
+.username {
+    margin-top: 10px;
+}
+.budget {
+    margin-top: 5px;
+}
+
+.read-more {
+    font-family: 'Mono';
+    margin: .5em 0;
+    font-size: 18px;
 }

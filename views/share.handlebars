@@ -1,9 +1,8 @@
 <!-- This is the form for adding a new Trip info -->
 <div class="add-trip-container">
-  <h2>
-    Tell us about your trip!!!
-  </h2>
+  
   <form class="trip-form">
+    <h2 class="share-form-header">Share your Journey</h2>
 
     <label for="city-name">Select the Destination City:</label>
     <br/>
@@ -14,62 +13,62 @@
     </select>
     <br/>
 
-    <label for="description">Description<span class="form-req">*</span>:</label>
+    <label class="share-label" for="description">Description<span class="form-req">*</span>:</label>
     <br/>
-    <input id="location-desc" name="location-desc"></input>
-    <br/>
-
-    <label for="total-traveller">Total travellers:</label>
-    <br/>
-    <input id="total-traveller" name="total-traveller"</input>
+    <input class="share-input" id="location-desc" name="location-desc"></input>
     <br/>
 
-    <label for="budget">Budget:</label>
+    <label class="share-label" for="total-traveller">Total travellers:</label>
+    <br/>
+    <input class="share-input" id="total-traveller" name="total-traveller"</input>
+    <br/>
+
+    <label class="share-label" for="budget">Budget:</label>
      <br/>
-    <input id="trip-budget" name="trip-budget"></input>
+    <input class="share-input" id="trip-budget" name="trip-budget"></input>
     <br/>
 
-    <label for="cloud-pic">Upload Pictures:</label>
+    <label class="share-label" for="cloud-pic">Upload Pictures:</label>
     <br/>
-    <input id="cloud-pic" name="cloud-pic"></input>
-    <br/>
-
-    <label for="food-rec">Your Top 3 Restaurant Recommendations:</label>
-    <br/>
-    <input id="food-rec1" name="food-rec1"></input>
-    <br/>
-    <input id="food-rec2" name="food-rec2"></input>
-    <br/>
-    <input id="food-rec3" name="food-rec3"></input>
+    <input class="share-input" id="cloud-pic" name="cloud-pic"></input>
     <br/>
 
-    <label for="hotel">Where did you stay at?:</label>
+    <label class="share-label" for="food-rec">Your Top 3 Restaurant Recommendations:</label>
     <br/>
-    <input id="hotel" name="hotel"></input>
+    <input class="share-input" id="food-rec1" name="food-rec1"></input>
+    <br/>
+    <input class="share-input" id="food-rec2" name="food-rec2"></input>
+    <br/>
+    <input class="share-input" id="food-rec3" name="food-rec3"></input>
+    <br/>
+
+    <label class="share-label" for="hotel">Where did you stay at?:</label>
+    <br/>
+    <input class="share-input" id="hotel" name="hotel"></input>
     <br/>
     
-    <label for="active-activities">Favorite Active Activity:</label>
+    <label class="share-label"  for="active-activities">Favorite Active Activity:</label>
     <br/>
-    <input id="active-activities" name="active-activities"></input>
-    <br/>
-
-    <label for="relaxing-activities">Favorite Relaxing Activity:</label>
-    <br/>
-    <input id="relaxing-activities" name="relaxing-activities"></input>
+    <input class="share-input" id="active-activities" name="active-activities"></input>
     <br/>
 
-    <label for="culture-sight">Favorite Cultural Sight:</label>
+    <label class="share-label"  for="relaxing-activities">Favorite Relaxing Activity:</label>
     <br/>
-    <input id="culture-sight" name="culture-sight"></input>
+    <input class="share-input" id="relaxing-activities" name="relaxing-activities"></input>
     <br/>
 
-    <label for="shopping">Favorite Shopping Spot:</label>
+    <label class="share-label" for="culture-sight">Favorite Cultural Sight:</label>
     <br/>
-    <input id="shopping" name="shopping"></input>
+    <input class="share-input" id="culture-sight" name="culture-sight"></input>
+    <br/>
+
+    <label class="share-label" for="shopping">Favorite Shopping Spot:</label>
+    <br/>
+    <input class="share-input" id="shopping" name="shopping"></input>
     <br/>
 
     <div class="form-group">
-      <label for="allow-pets">Is this a pet-friendly destination?</label>
+      <label class="share-input" for="allow-pets">Is this a pet-friendly destination?</label>
       </br>
       <select class="form-control" id="allow-pets">
         <option value="true">Yes</option>
