@@ -1,35 +1,41 @@
 # Out of Office
 ## Description
-This is an app for sharing your vacation experiences, and also reading about experiences of your friends and family!
+"Out of Office" is a full-stack application designed for users to read about and share travel experiences.  
+
+The goal of this project was to develop a full-stack application that showcases the skills we've developed over the course of this Coding Bootcamp. It uses Node.js and Express.js to create a RESTful API, Handlebars.js as the template engine, MySQL and the Sequelize ORM for the database, and GET and POST routes for retrieving and adding new data. The folder structure follows the MVC paradigm and the appplication protects sensitive information with environment variables. The application also uses express-sessions and cookies for user authentication. This site was (proudly!) built completely from scratch, then deployed to Heroku. It was carefully crafted to create a pleasant user experience and is both desktop and mobile friendly. A link to the deployed application can be found below.
 
 ## User Story
-As a user, I want to login into an app in a secure way protecting my email and password. When I want to create a post to share, I can then do so to include things like budget, number of travellers, restaurants, culture, activities, and if pets are travelling with us. When I want to read about experiences of others, I can then go to a page to enjoy others stories!
+"As a user who loves to travel, I want a full-stack application with a polished, responsive UI, so that I can share my travel experiences and read about the travel experiences of others."
 
 ## Technologies Used
+* Node.js
+* Dotenv
 * MySQL
-* Dotenv package
-* Cookies
-* JavaScript
 * Sequelize
-* Bcrypt
-* Heroku
-* CSS
-* Handlebars
-* Cloudinary
 * Express Server (routes)
 * Express Session (session)
+* Handlebars
+* Cloudinary
+* Bcrypt
+* Cookies
 * Insomnia Core
 * JAWSDB
-* Node.js
+* Heroku
+* and more!
 
+## Usage 
+[Here](https://out-of-office-app.herokuapp.com/) is a link to the deployed application.  
+[Here](https://github.com/jojonah1812/out-of-office) is a link to the GitHub repository containing the application code.  
+  
+Below is a screenshot of the application homepage (post login):  
+![Out of Office Homepage](public/assets/screenshots/out-of-office-home-page.png)  
+
+Below is a screenshot of the application homepage on mobile:  
+![Out of Office Homepage](public/assets/screenshots/out-of-office-home-page-mobile.png)  
 
 ## Contributors
-* Tai Mujarin
-* Yasi Moshtael
-* Jonah Haase
-* Henry Parras
-
-![out-of-office-home-page](https://user-images.githubusercontent.com/82185621/124057432-51013c00-d9dc-11eb-9150-0e0896d278fa.png)
-
-https://github.com/jojonah1812/out-of-office
+* [Tai Mujarin](https://github.com/ayotai)
+* [Yasi Moshtael](https://github.com/go-yasi)
+* [Henry Parras](https://github.com/henryparras24)
+* [Jonah Haase](https://github.com/jojonah1812)
 
