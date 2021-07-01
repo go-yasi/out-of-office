@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Trip, User } = require('../../models');
+const { Location, Trip, User } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // Get a trip   /// reffer to location by id
@@ -23,10 +23,28 @@ const withAuth = require('../../utils/auth');
 router.get('/:id', withAuth, async (req, res) => {
     try {
       const tripData = await Trip.findByPk(req.params.id, {
-          include: [{ model: Location, model: User }]
-      });
+        include: [{
+          model:User,
+            attributes: [
+              'username',
+            ],
+            
+          model: Location,
+            attributes: [
+             'city',
+             'country',
+            ],
+        }]
+    });
+      if (!tripData) {
+        res.status(404).json({ message: 'No trips found with this ID!' });
+        return;
+      }
+      const trips = tripData.get({plain: true});
       // add a render similar to location by id, renders post.handlebars page but the url is trip/:id
-      res.status(200).json(tripData);
+      // res.status(200).json(trips);
+      console.log(trips);
+      res.render('post', {trips, logged_in: req.session.logged_in})
     } catch (err) {
       res.status(400).json(err);
     }

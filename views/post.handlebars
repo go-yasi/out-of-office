@@ -8,8 +8,23 @@
 
 <div class="user-trip">
     {{!-- Location City, Country --}}
+    <h2 class="location">{{location.city}}, {{location.country}}</h2>
     {{!-- Posted by: username --}}
+    <p class="username">{{users.username}}</p>
     {{!-- trip photo --}}
+    {{!-- <p class="trip-photo">{{trip.photo}}</p> --}}
     {{!-- Trip description --}}
+    <p class="trip-desc">{{trips.description}}</p>
     {{!-- everything from trip model --}}
+    <p class="trip-budget">{{trips.budget}}</p>
+    <p class="trip-travelers">{{trips.total_travelers}}</p>
+    <p class="trip-restaurant_rec1">{{trips.restaurant_rec1}}</p>
+    {{!-- <p class="trip-restaurant_rec2">{{trip.restaurant_rec2}}</p> --}}
+    {{!-- <p class="trip-restaurant_rec3">{{trip.restaurant_rec3}}</p> --}}
+    <p class="trip-hotel">{{trips.hotel}}</p>
+    <p class="trip-culture">{{trips.culture}}</p>
+    <p class="trip-active">{{trips.active_activities}}</p>
+    <p class="trip-relaxing">{{trips.relaxing_activities}}</p>
+    <p class="shopping">{{trips.shopping}}</p>
+    <p class="trip-pet">{{trips.allow_pets}}</p>
 </div>
