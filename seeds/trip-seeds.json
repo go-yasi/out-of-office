@@ -5,8 +5,8 @@
         "total_travelers":5,
         "restaurant_rec1":"Heliot Steak House",
         "hotel": "The Connaught",
-        "culture":"",
-        "active_activities":"Westminster Abbey, The London Eye",
+        "culture":"Westminster Abbey",
+        "active_activities":"The London Eye",
         "relaxing_activities":"",
         "shopping":"Harrods",
         "allow_pets": true,
@@ -14,31 +14,32 @@
         "user_id":1
     },
     {
-        "description":"This was our second trip to London so we were looking for a trip that was more focused on relaxation.  ",
+        "description":"This was our second trip to London so we were looking for a trip that was more focused on relaxation.",
         "budget": 4200,
         "total_travelers":2,
         "restaurant_rec1":"Denny's",
         "hotel":"The Waldorf Hilton",
         "culture":"The West End",
         "active_activities":"",
-        "relaxing_activities":"Hyde Park, Kensington Gardens, Regents Park, Cruise on the River Thames",
-        "shopping":"Bond Street, Harrods",
+        "relaxing_activities":"Cruise on the River Thames",
+        "shopping":"Bond Street",
         "allow_pets":false,
         "location_id":1,
         "user_id":2
     },
     {
-        "description":"Our dream trip has always been to visit Paris.  There was so much culture, history, and amazing dining around every corner!",
+        "description":"Our dream trip has always been to visit Paris. There was so much culture, history, and amazing dining around every corner!",
         "budget": 6000,
         "total_travelers":2,
         "restaurant_rec1":"McDonalds",
         "hotel":"Pavillon Monceau Hotel",
         "culture":"",
-        "active_activities":"Eiffel Tower, Arc De Triomphe",
-        "relaxing_activities":"Sit and enjoy the scenery at  Au Vieux Paris.",
+        "active_activities":"The Louvre",
+        "relaxing_activities":"Sit and enjoy the scenery at Au Vieux Paris.",
         "shopping":"Via dei Condotti",
         "allow_pets": true,
-        "location_id":2
+        "location_id":2,
+        "user_id": 3
     },
     {
         "description":"Los Angeles",
@@ -62,8 +63,9 @@
         "culture":"Moray",
         "active_activities":"Huayna Picchu",
         "relaxing_activities":"Laguna Humantay",
-        "shopping":"",
+        "shopping":"Sacred Valley Outdoor Market",
         "allow_pets":false,
-        "location_id":4
+        "location_id":4,
+        "user_id": 4
     }
 ]
