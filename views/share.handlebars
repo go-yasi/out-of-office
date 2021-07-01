@@ -1,93 +1,103 @@
 <!-- This is the form for adding a new Trip info -->
 <div class="add-trip-container">
   <form class="trip-form">
+    {{!-- Share Trip Form Intro --}}
     <img class="explore graphic" src="../../assets/landing/explore-graphic.png" alt="explore graphic">
     <h2 class="share-form-header">Share your Journey</h2>
     <p class="form-guide">Tell us about your trip by completing the form below.</p>
     <p class="asterisk">Please note: Any question with an *asterisk requires a response.</p>
     </br>
 
-<div class="form-inputs">
- 
-<label class="share-label" for="city-name">Select the Destination City:<span class="form-req">*</span></label>
-    <br/>
-    <select class="share-input" id="city-name" name="city-name">
-      {{#each locations as |location|}}
-      <option value="{{location.id}}">{{location.city}}</option>
-      {{/each}}
-    </select>
-    <br/>
+    {{!-- Share Trip Form Questions --}}
+    <div class="form-inputs">
+      {{!-- Select location --}}
+      <label class="share-label" for="city-name">Select the Destination City:<span class="form-req">*</span></label>
+      <br/>
+      <select class="share-input" id="city-name" name="city-name">
+        {{#each locations as |location|}}
+        <option value="{{location.id}}">{{location.city}}</option>
+        {{/each}}
+      </select>
+      <br/>
 
-    <label class="share-label" for="description">Description:<span class="form-req">*</span></label>
-    <br/>
-    <input class="share-input" id="location-desc" name="location-desc"></input>
-    <br/>
+      {{!-- Trip description --}}
+      <label class="share-label" for="description">Description:<span class="form-req">*</span></label>
+      <br/>
+      <input class="share-input" id="location-desc" name="location-desc"></input>
+      <br/>
 
-    <label class="share-label" for="total-traveller">Total travellers:<span class="form-req">*</span></label>
-    <br/>
-    <input class="share-input" id="total-traveller" name="total-traveller"</input>
-    <br/>
+      {{!-- Total travelers --}}
+      <label class="share-label" for="total-traveller">Total travellers:<span class="form-req">*</span></label>
+      <br/>
+      <input class="share-input" id="total-traveller" name="total-traveller"</input>
+      <br/>
 
-    <label class="share-label" for="budget">Budget:<span class="form-req">*</span></label>
-     <br/>
-    <input class="share-input" id="trip-budget" name="trip-budget"></input>
-    <br/>
+      {{!-- Trip budget --}}
+      <label class="share-label" for="budget">Budget:<span class="form-req">*</span></label>
+        <br/>
+      <input class="share-input" id="trip-budget" name="trip-budget"></input>
+      <br/>
 
-    <label class="share-label" for="cloud-pic">Upload Pictures:</label>
-    <br/>
-    <button id="upload_widget" class="cloudinary-button">Upload files</button>
-    <br/>
+      {{!-- Cloudinary image upload --}}
+      <label class="share-label" for="cloud-pic">Upload Pictures:</label>
+      <br/>
+      <button id="upload_widget" class="cloudinary-button">Upload files</button>
+      <br/>
 
-    <label class="share-label" for="food-rec">Your Top 3 Restaurant Recommendations:<span class="form-req">*</span></label>
-    <br/>
-    <input class="share-input" id="food-rec1" name="food-rec1"></input>
-    <br/>
-    <input class="share-input" id="food-rec2" name="food-rec2"></input>
-    <br/>
-    <input class="share-input" id="food-rec3" name="food-rec3"></input>
-    <br/>
+      {{!-- Trip restaurants --}}
+      <label class="share-label" for="food-rec">Your Top 3 Restaurant Recommendations:<span class="form-req">*</span></label>
+      <br/>
+      <input class="share-input" id="food-rec1" name="food-rec1"></input>
+      <br/>
+      <input class="share-input" id="food-rec2" name="food-rec2"></input>
+      <br/>
+      <input class="share-input" id="food-rec3" name="food-rec3"></input>
+      <br/>
 
-    <label class="share-label" for="hotel">Where did you stay?<span class="form-req">*</span></label>
-    <br/>
-    <input class="share-input" id="hotel" name="hotel"></input>
-    <br/>
-    
-    <label class="share-label"  for="active-activities">Favorite Active Activity:</label>
-    <br/>
-    <input class="share-input" id="active-activities" name="active-activities"></input>
-    <br/>
+      {{!-- Trip hotel --}}
+      <label class="share-label" for="hotel">Where did you stay?<span class="form-req">*</span></label>
+      <br/>
+      <input class="share-input" id="hotel" name="hotel"></input>
+      <br/>
+      
+      {{!-- Trip active activity --}}
+      <label class="share-label"  for="active-activities">Favorite Active Activity:</label>
+      <br/>
+      <input class="share-input" id="active-activities" name="active-activities"></input>
+      <br/>
 
-    <label class="share-label"  for="relaxing-activities">Favorite Relaxing Activity:</label>
-    <br/>
-    <input class="share-input" id="relaxing-activities" name="relaxing-activities"></input>
-    <br/>
+      {{!-- Trip relaxing activity --}}
+      <label class="share-label"  for="relaxing-activities">Favorite Relaxing Activity:</label>
+      <br/>
+      <input class="share-input" id="relaxing-activities" name="relaxing-activities"></input>
+      <br/>
 
-    <label class="share-label" for="culture-sight">Favorite Cultural Sight:</label>
-    <br/>
-    <input class="share-input" id="culture-sight" name="culture-sight"></input>
-    <br/>
+      {{!-- Trip culture --}}
+      <label class="share-label" for="culture-sight">Favorite Cultural Sight:</label>
+      <br/>
+      <input class="share-input" id="culture-sight" name="culture-sight"></input>
+      <br/>
 
-    <label class="share-label" for="shopping">Favorite Shopping Spot:</label>
-    <br/>
-    <input class="share-input" id="shopping" name="shopping"></input>
-    <br/>
+      {{!-- Trip shopping --}}
+      <label class="share-label" for="shopping">Favorite Shopping Spot:</label>
+      <br/>
+      <input class="share-input" id="shopping" name="shopping"></input>
+      <br/>
 
-    <label class="share-label" for="allow-pets">Is this a pet-friendly destination?</label>
-    </br>
-    <select class="share-input" id="allow-pets">
-      <option value="Yes">Yes</option>
-      <option value="No">No</option>
-    </select>
+      {{!-- Trip pets ok? --}}
+      <label class="share-label" for="allow-pets">Is this a pet-friendly destination?</label>
+      </br>
+      <select class="share-input" id="allow-pets">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+      <br/>
 
-    <br/>
-
-    <button class="new-post-submit" type="submit" value="Submit">Submit</button>
-</div>
-    
-
-    
-    
+      {{!-- Submit Form Button --}}
+      <button class="new-post-submit" type="submit" value="Submit">Submit</button>
+    </div>
   </form>
 </div>
+
 <script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript"></script> 
 <script src="/js/share.js"></script>
