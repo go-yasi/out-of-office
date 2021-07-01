@@ -299,8 +299,18 @@ input {
 /* SHARE FORM PAGE */
 .trip-form {
     border: 1px solid var(--brown);
-    padding: 2em;
-    margin: 1vw 4vw;
+    padding: 4em;
+    margin: 2vw 6vw;
+    text-align: left;
+}
+.share-form-header {
+    font-family: 'Cursive';
+    font-size: 4vw;
+    text-align: center;
+}
+.share-input {
+    color: red;
+    text-transform: none;
     text-align: left;
 }
 
