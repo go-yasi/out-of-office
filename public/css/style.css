@@ -433,3 +433,23 @@ input {
     width: 40vw;
     height: 40vw;
 }
+
+/* MOBILE EDITS */
+
+@media screen and (max-width:767px) {
+    /* LANDING PAGE */
+    #login-link {
+        font-size: 16px;
+        line-height: 1.2em;
+    }
+    #introVideo {
+        position: fixed;
+        z-index: -1;
+        right: 0;
+        top: -20%;
+        min-height: 120vh;
+        width: auto;
+      }
+
+      /* LOGIN PAGE */
+}
