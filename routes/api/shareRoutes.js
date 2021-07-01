@@ -7,7 +7,7 @@ router.get('/', withAuth, async (req, res) => {
     const locationData = await Location.findAll();
     const locations = locationData.map((location) => 
     location.get({plain: true}));
-    res.render('share', {locations, loggedIn: req.session.loggedIn,});
+    res.render('share', {locations, logged_in: req.session.logged_in,});
   } catch (err) {
     res.status(500).json(err);
   }
