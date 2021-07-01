@@ -11,34 +11,30 @@
 </head>
 
 <body>
-{{!-- {{#if logged_in}} --}}
+{{#if logged_in}}
   <header class="main-header">
     <div class="main-logo">
       <h1 class="ooo-header-logo">
         Out of Office
       </h1>
     </div>
-    
-
+  
     <nav>
       <a href="/location" class="navguy">Home</a>
       <a href="/api/share" class="navguy">+ New Post</a>
-      <a href="/" class="btn navguy" id="logout">Logout</a>
+      <button class="btn navguy" id="logout">Logout</button>
     </nav>
-
-    
 
   </header>
 
   <section class="scroll">
-      <div class="marquee">
-    <div class="track">
-      <p>Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind    —Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind    —</p>
+    <div class="marquee">
+      <div class="track">
+        <p>Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind    —Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind   —   Out of Office, Out of Mind    —</p>
+      </div>
     </div>
-  </div>
-
   </section>
-{{!-- {{/if}} --}}
+{{/if}}
 
 
   <main class="main-body">
@@ -47,7 +43,7 @@
   
 
   <!-- Only include if user is logged in -->
-  {{#if logged_in}}
+
   <footer>
     <div class="credits">
       <p>Proudly created by
@@ -61,7 +57,7 @@
   </footer>
   
   <script src="/js/logout.js"></script>
-  {{/if}}
+
 
 </body>
 
