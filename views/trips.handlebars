@@ -13,9 +13,11 @@
   {{!-- Create trip card --}}
   <div class="trip-card">
     {{!-- Trip image (top) --}}
-    <div class="trip-image-block">
-      <img class="trip-image" src="{{show.trip.photo}}" alt="{{location.city}}">
-    </div>
+    <a href="/api/trip/{{show.trip.id}}">
+      <div class="trip-image-block">
+        <img class="trip-image" src="{{show.trip.photo}}" alt="{{location.city}}">
+      </div>
+    </a>
     {{!-- Trip info (bottom) --}}
     <div class="trip-preview-info">
       <p class="location-desc">{{show.trip.description}}</p>

@@ -404,3 +404,7 @@ input {
 .post-a {
     margin-top: .5em;
 }
+.user-photo {
+    width: 40vw;
+    height: 40vw;
+}
