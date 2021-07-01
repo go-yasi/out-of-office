@@ -24,7 +24,8 @@
         "relaxing_activities":"Hyde Park, Kensington Gardens, Regents Park, Cruise on the River Thames",
         "shopping":"Bond Street, Harrods",
         "allow_pets":false,
-        "location_id":1
+        "location_id":1,
+        "user_id":2
     },
     {
         "description":"Our dream trip has always been to visit Paris.  There was so much culture, history, and amazing dining around every corner!",

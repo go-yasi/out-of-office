@@ -1,6 +1,5 @@
 // important to create in order of use
 const Location = require('./Location');
-const Photos = require('./Photos');
 const User = require('./User');
 const Trip = require('./Trip');
 
@@ -30,4 +29,4 @@ Location.belongsToMany(User, {
     as: 'location_users'
 });
 
-module.exports = { Location, Photos, Trip, User };
+module.exports = { Location, Trip, User };
