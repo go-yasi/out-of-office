@@ -1,34 +1,37 @@
 <div class="trips-intro">
 
-    <img class="compass-logo" src="../../assets/landing/compass-logo.png" alt="compass graphic">
-    <h3 class="intro-text">Destination: </br>{{city}}, {{country}}</h3>
+    <img class="plane" src="../../assets/landing/plane-graphic.png" alt="plane graphic">
+    {{!-- <h6>Destination:</h6> --}}
+    <h3 class="intro-text">{{city}}, {{country}}</h3>
 
 </div>
 
 
 <div class="all-trips">
-  <h6 class="trips-header">All user posts for {{city}}</h6>
 
   {{#each location_users as |show|}}
-  <a href="/api/trip/{{show.trip.id}}">
-    {{!-- Create trip card --}}
-      <div class="trip-card">
-        {{!-- Trip image (top) --}}
-        <div class="trip-image-block">
-          <img class="trip-image" src="{{location.photo}}" alt="{{location.city}}">
-        </div>
-        {{!-- Trip info (bottom) --}}
-        <div class="trip-preview-info">
-          <p class="location-desc">{{show.trip.description}}</p>
-          {{!-- Little details --}}
-          <div class="little-trip-info">
-            <h6 class="username">@{{show.username}}</h6>
-            <h6 class="budget">Budget: {{show.trip.budget}}</h6>
-          </div>
-        </div>
+  {{!-- Create trip card --}}
+  <div class="trip-card">
+    {{!-- Trip image (top) --}}
+    <div class="trip-image-block">
+      <img class="trip-image" src="{{photo}}" alt="{{location.city}}">
+    </div>
+    {{!-- Trip info (bottom) --}}
+    <div class="trip-preview-info">
+      <p class="location-desc">{{show.trip.description}}</p>
+      {{!-- Little details --}}
+      <div class="little-trip-info">
+        <h6 class="username">Posted by: @{{show.username}}</h6>
+        <h6 class="budget">Budget: ${{show.trip.budget}}</h6>
       </div>
-    </a>
+      {{!-- Read More link --}}
+      <div class="read-more">
+        <a href="/trip/{{show.trip.id}}">Read More</a>
+      </div>
+    </div>
+  </div>
   {{/each}}
+  
 </div>
 
 {{!-- <div class="location-trip-post">
