@@ -1,18 +1,34 @@
 [
     {
-    "name":"John Garth",
-    "email":"garth@gmail.com",
-    "password":"43%$5gK",
-    "username":"jgarth",
-    "location":"Fargo, ND",
-    "bio":"Travel as has always been a big to me.  I love getting out of North Dakota and seeing the rest of the country.  I have visited many states, but now I am branching out to other countries."
+        "name":"John Garth",
+        "email":"garth@gmail.com",
+        "password":"43%$5gK",
+        "username":"jgarth",
+        "location":"Fargo, ND",
+        "bio":"Travel as has always been a big to me.  I love getting out of North Dakota and seeing the rest of the country.  I have visited many states, but now I am branching out to other countries."
     },
     {
-    "name":"Sandy Reynolds",
-    "email":"wrldtrvlr@ymail.com",
-    "password":"sj5$Gjsh",
-    "username":"worldtraveller",
-    "location":"Barstow, CA",
-    "bio":"Our family of 5 loves to travel whenever we can.  Road trips, visits to relatives, or even trips overseas.  Lately, we have had a strong interest in the culture and history of England."
-    }    
+        "name":"Sandy Reynolds",
+        "email":"wrldtrvlr@ymail.com",
+        "password":"sj5$Gjsh",
+        "username":"worldtraveller",
+        "location":"Barstow, CA",
+        "bio":"Our family of 5 loves to travel whenever we can.  Road trips, visits to relatives, or even trips overseas.  Lately, we have had a strong interest in the culture and history of England."
+    },
+    {
+        "name":"Yasi Moshtael",
+        "email":"yasi.moshtael@gmail.com",
+        "password":"password",
+        "username":"go-yasi",
+        "location":"Los Angeles, CA",
+        "bio":"Yasi has been awarded as the greatest human ever on multiple occassions."
+    },
+    {
+        "name":"",
+        "email":"",
+        "password":"",
+        "username":"",
+        "location":"",
+        "bio":""
+    }  
 ]
