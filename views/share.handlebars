@@ -4,7 +4,11 @@
   <form class="trip-form">
     <h2 class="share-form-header">Share your Journey</h2>
 
-    <label for="city-name">Select the Destination City:</label>
+    <img class="explore graphic" src="../../assets/landing/explore-graphic.png" alt="explore graphic">
+    </br>
+
+<div class="form-inputs">
+<label class="share-label" for="city-name">Select the Destination City:</label>
     <br/>
     <select class="share-input" id="city-name" name="city-name">
       {{#each locations as |location|}}
@@ -67,17 +71,20 @@
     <input class="share-input" id="shopping" name="shopping"></input>
     <br/>
 
-    <div class="form-group">
-      <label class="share-input" for="allow-pets">Is this a pet-friendly destination?</label>
-      </br>
-      <select class="form-control" id="allow-pets">
-        <option value="Yes">Yes</option>
-        <option value="No">No</option>
-      </select>
-    </div>
+    <label class="share-label" for="allow-pets">Is this a pet-friendly destination?</label>
+    </br>
+    <select class="share-input" id="allow-pets">
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+
     <br/>
 
-    <button type="submit" value="Submit">Submit</button>
+    <button class="new-post-submit" type="submit" value="Submit">Submit</button>
+</div>
+    
+
+    
     
   </form>
 </div>
