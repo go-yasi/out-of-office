@@ -288,7 +288,7 @@ input {
     border-bottom: 1px solid gray;
     width: 20vw;
 }
-.login-btn, .signup-btn, .new-post-submit {
+.login-btn, .signup-btn, .new-post-submit, .cloudinary-button {
     border-radius: 0;
     border: none;
     background-color: var(--brown);
@@ -300,7 +300,7 @@ input {
     letter-spacing: .1em;
 }
 
-.login-btn:hover, .signup-btn:hover, .new-post-submit:hover {
+.login-btn:hover, .signup-btn:hover, .new-post-submit:hover, .cloudinary-button:hover {
     background-color: var(--greenish);
     color: var(--brown);
 }
@@ -349,6 +349,9 @@ input {
 }
 .new-post-submit {
     margin-top: 1em;
+}
+.cloudinary-button {
+    margin: 1em 0;
 }
 
 
