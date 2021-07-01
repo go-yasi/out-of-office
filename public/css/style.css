@@ -353,3 +353,15 @@ input {
     margin: .5em 0;
     font-size: 18px;
 }
+
+/* POST PAGE */
+.user-trip {
+    margin: 6vw;
+    text-align: center;
+}
+.post-q {
+    margin-top: 4em;
+}
+.post-a {
+    margin-top: .5em;
+}
