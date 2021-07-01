@@ -41,7 +41,7 @@
         "relaxing_activities":"Sit and enjoy the scenery at Au Vieux Paris.",
         "shopping":"Via dei Condotti",
         "allow_pets": "yes",
-        "location_id":2,
+        "location_id":4,
         "user_id": 3
     },
     {
@@ -56,10 +56,10 @@
         "relaxing_activities":"Descanso Gardens",
         "shopping":"Grand Central Market",
         "allow_pets": "yes",
-        "location_id":3
+        "location_id":2
     },
     {   
-        "description":"Machu Picchu",
+        "description":"We went on a family trip to explore Machu Picchu.",
         "photo": "../public/assets/locations/user-machu.jpg",
         "budget": 3800,
         "total_travelers":4,
@@ -70,7 +70,7 @@
         "relaxing_activities":"Laguna Humantay",
         "shopping":"Sacred Valley Outdoor Market",
         "allow_pets":"no",
-        "location_id":4,
+        "location_id":3,
         "user_id": 4
     }
 ]
