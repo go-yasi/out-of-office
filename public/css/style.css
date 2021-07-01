@@ -382,7 +382,6 @@ input {
     height: 32vw;
 }
 .trip-card {
-    /* border: 1px solid blue; */
     width: 40vw;
     margin: 0 2vw 2vw;
 }
@@ -546,11 +545,42 @@ input {
     }
     /* TRIPS PAGE */
     .plane {
-        width: 100px;
+        width: 80px;
         margin-top: .5em;
     }
     .trips.intro-text {
         font-size: 40px;
         padding: 0 40px;
+    }
+    .all-trips {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: left;
+    }
+    .trip-card {
+        width: 85vw;
+        margin: 1em;
+        border: 1px solid var(--brown);
+    }
+    .trip-image {
+        width: 100%;
+        height: auto;
+        border: none;
+        border-bottom: 1px solid var(--brown);
+    }
+    .trip-preview-info {
+        margin: .4em .8em .8em;
+    }
+    .location-desc {
+        font-style: italic;
+    }
+    .budget {
+        display: none;
+    }
+    .read-more a {
+        margin: .25em 0;
+        font-size: 15px;
+        color: #2e501e;
     }
 }
