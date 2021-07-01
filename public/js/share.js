@@ -1,10 +1,12 @@
+var photo = "";
+
 async function newFormHandler(event) {
     event.preventDefault();
     let location_id = document.querySelector('#city-name').value.trim();
     const description = document.querySelector('#location-desc').value.trim();
     let total_travelers = document.querySelector('#total-traveller').value.trim();
     let budget = document.querySelector('#trip-budget').value.trim();
-    const photo = document.querySelector('#cloud-pic').value.trim();
+    // const photo = document.querySelector('#cloud-pic').value.trim();
     const restaurant_rec1 = document.querySelector('#food-rec1').value.trim();
     const restaurant_rec2 = document.querySelector('#food-rec2').value.trim();
     const restaurant_rec3 = document.querySelector('#food-rec3').value.trim();
@@ -56,4 +58,19 @@ async function newFormHandler(event) {
 }
 
 
-document.querySelector('.trip-form').addEventListener('submit', newFormHandler);
+document.querySelector('.new-post-submit').addEventListener('click', newFormHandler);
+
+var myWidget = cloudinary.createUploadWidget({
+  cloudName: 'ucla-coding-boot-camp', 
+  uploadPreset: 'harp79tv'}, (error, result) => { 
+    if (!error && result && result.event === "success") { 
+      console.log('Done! Here is the image info: ', result.info); 
+      photo = result.info.url;
+
+    }
+  }
+)
+document.getElementById("upload_widget").addEventListener("click", function(event){
+  event.preventDefault();
+    myWidget.open();
+  }, true);
