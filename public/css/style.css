@@ -204,15 +204,11 @@ footer {
     padding-top: 3px;
 }
 .flex-info {
-    /* border: 1px solid aqua; */
     flex: 1;
     padding: 2em;
     transition: .5s ease;
     align-self: center;
 }
-/* .flex-info:hover {
-    background-color: #37342f9a;
-} */
 .location-name {
     font-size: 2vw;
     line-height: 1.2;
@@ -220,8 +216,6 @@ footer {
     font-family: 'Mono';
 }
 .little-loc-info {
-    /* display: flex;
-    justify-content: space-between; */
     margin-top: 1em;
 }
 .climate {
@@ -537,6 +531,18 @@ input {
         height: auto;
         padding: 0;
         border-bottom: 1px solid var(--brown);
+    }
+    .flex-info {
+        padding: 1em 1.5em 1.5em;
+    }
+    .location-name {
+        font-size: 24px;
+        letter-spacing: -.05em;
+        margin-bottom: .68em;
+    }
+    .location-desc {
+        font-size: 14px;
+        line-height: 1.1;
     }
     
 }
