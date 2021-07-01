@@ -8,14 +8,6 @@
         "climate": "cloudy"
     },
     {
-        "city": "Paris",
-        "country": "France",
-        "description": "Paris (nicknamed the 'City of Light') is the capital city of France, and the largest city in France.",
-        "photo": "../../assets/locations/city-of-paris.jpeg",
-        "language": "French",
-        "climate": "sunny"
-    },
-    {
         "city": "Los Angeles",
         "state": "California",
         "country": "USA",
@@ -31,6 +23,14 @@
         "photo": "../../assets/locations/city-of-machu-picchu.jpeg",
         "language": "Spanish",
         "climate": "tropical mountain"
+    },
+    {
+        "city": "Paris",
+        "country": "France",
+        "description": "Paris (nicknamed the 'City of Light') is the capital city of France, and the largest city in France.",
+        "photo": "../../assets/locations/city-of-paris.jpeg",
+        "language": "French",
+        "climate": "sunny"
     },
     {
         "city": "Tokyo",

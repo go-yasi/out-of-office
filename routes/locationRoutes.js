@@ -10,7 +10,8 @@ const withAuth = require('../utils/auth');
 router.get('/', withAuth, async (req, res) => {
     try {
         const locationData = await Location.findAll({
-            include: [{ model: User, through: Trip, as:'location_users' }]
+            include: [{ model: User, through: Trip, as:'location_users' }],
+            order: [['city', 'ASC']],
         });
         const locations = locationData.map((location) => 
         location.get({plain: true}));
