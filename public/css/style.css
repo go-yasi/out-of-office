@@ -326,7 +326,6 @@ input {
     text-transform: none;
     text-align: left;
     border: 1px solid var(--brown);
-    /* margin-top: 10px; */
     display: block;
     width: 50vw;
     background-color: white;
@@ -586,5 +585,23 @@ input {
         margin: .25em 0;
         font-size: 15px;
         color: #2e501e;
+    }
+
+    /* SHARE FORM */
+    .trip-form {
+        padding: 1em 2em 2em;
+        margin: 1em 1.5em;
+    }
+    .share-form-header {
+        font-size: 48px;
+    }
+    .form-instructions {
+        margin-top: 20px;
+    }
+    .asterisk {
+        margin-bottom: 0;
+    }
+    .share-input {
+        width: 100%;
     }
 }
