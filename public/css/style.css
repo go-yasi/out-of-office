@@ -330,6 +330,10 @@ input {
     width: 50vw;
     background-color: white;
 }
+.share-food {
+    font-style: italic;
+    color: rgba(236, 233, 233, 0.781) !important;
+}
 .form-inputs {
     margin: 0 auto !important;
     border-top: 1px solid var(--brown);
