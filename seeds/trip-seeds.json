@@ -1,6 +1,7 @@
 [
     {
         "description":"We took a great trip with our family to London!",
+        "photo": "../public/assets/locations/user-london.jpg",
         "budget": 2400,
         "total_travelers":5,
         "restaurant_rec1":"Heliot Steak House",
@@ -15,6 +16,7 @@
     },
     {
         "description":"This was our second trip to London so we were looking for a trip that was more focused on relaxation.",
+        "photo": "../public/assets/locations/user-london.jpg",
         "budget": 4200,
         "total_travelers":2,
         "restaurant_rec1":"Denny's",
@@ -29,6 +31,7 @@
     },
     {
         "description":"Our dream trip has always been to visit Paris. There was so much culture, history, and amazing dining around every corner!",
+        "photo": "../public/assets/locations/user-paris2.jpg",
         "budget": 6000,
         "total_travelers":2,
         "restaurant_rec1":"McDonalds",
@@ -43,6 +46,7 @@
     },
     {
         "description":"Los Angeles",
+        "photo": "../public/assets/locations/user-la.jpeg",
         "budget": 1800,
         "total_travelers":4,
         "restaurant_rec1":"Carnitas el Momo",
@@ -56,6 +60,7 @@
     },
     {   
         "description":"Machu Picchu",
+        "photo": "../public/assets/locations/user-machu.jpg",
         "budget": 3800,
         "total_travelers":4,
         "restaurant_rec1":"Olive Garden",
