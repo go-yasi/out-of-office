@@ -8,7 +8,10 @@
     </br>
 
 <div class="form-inputs">
-<label class="share-label" for="city-name">Select the Destination City:</label>
+  <p class="form-guide">Tell us about your trip by completing the form below.</p>
+  <p class="asterisk">Please note: Any question with an *asterisk requires a response.</p>
+  </br>
+<label class="share-label" for="city-name">Select the Destination City:<span class="form-req">*</span></label>
     <br/>
     <select class="share-input" id="city-name" name="city-name">
       {{#each locations as |location|}}
@@ -17,17 +20,17 @@
     </select>
     <br/>
 
-    <label class="share-label" for="description">Description<span class="form-req">*</span>:</label>
+    <label class="share-label" for="description">Description:<span class="form-req">*</span></label>
     <br/>
     <input class="share-input" id="location-desc" name="location-desc"></input>
     <br/>
 
-    <label class="share-label" for="total-traveller">Total travellers:</label>
+    <label class="share-label" for="total-traveller">Total travellers:<span class="form-req">*</span></label>
     <br/>
     <input class="share-input" id="total-traveller" name="total-traveller"</input>
     <br/>
 
-    <label class="share-label" for="budget">Budget:</label>
+    <label class="share-label" for="budget">Budget:<span class="form-req">*</span></label>
      <br/>
     <input class="share-input" id="trip-budget" name="trip-budget"></input>
     <br/>
@@ -37,7 +40,7 @@
     <input class="share-input" id="cloud-pic" name="cloud-pic"></input>
     <br/>
 
-    <label class="share-label" for="food-rec">Your Top 3 Restaurant Recommendations:</label>
+    <label class="share-label" for="food-rec">Your Top 3 Restaurant Recommendations:<span class="form-req">*</span></label>
     <br/>
     <input class="share-input" id="food-rec1" name="food-rec1"></input>
     <br/>
@@ -46,7 +49,7 @@
     <input class="share-input" id="food-rec3" name="food-rec3"></input>
     <br/>
 
-    <label class="share-label" for="hotel">Where did you stay at?:</label>
+    <label class="share-label" for="hotel">Where did you stay?<span class="form-req">*</span></label>
     <br/>
     <input class="share-input" id="hotel" name="hotel"></input>
     <br/>
