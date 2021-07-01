@@ -1,30 +1,36 @@
-{{!-- <div class="post-by-id">
-    <h2 class="location">{{city}}, {{country}}</h2>
-    <p class="location-desc">{{description}}</p>
-
-    <p>{{location_users.trip.budget}}</p>
-</div> --}}
-
-
 <div class="user-trip">
-    {{!-- Location City, Country --}}
-    <h2 class="location">{{location.city}}, {{location.country}}</h2>
-    {{!-- Posted by: username --}}
-    <p class="username">{{users.username}}</p>
-    {{!-- trip photo --}}
-    {{!-- <p class="trip-photo">{{trip.photo}}</p> --}}
-    {{!-- Trip description --}}
-    <p class="trip-desc">{{trips.description}}</p>
-    {{!-- everything from trip model --}}
-    <p class="trip-budget">{{trips.budget}}</p>
-    <p class="trip-travelers">{{trips.total_travelers}}</p>
-    <p class="trip-restaurant_rec1">{{trips.restaurant_rec1}}</p>
-    {{!-- <p class="trip-restaurant_rec2">{{trip.restaurant_rec2}}</p> --}}
-    {{!-- <p class="trip-restaurant_rec3">{{trip.restaurant_rec3}}</p> --}}
-    <p class="trip-hotel">{{trips.hotel}}</p>
-    <p class="trip-culture">{{trips.culture}}</p>
-    <p class="trip-active">{{trips.active_activities}}</p>
-    <p class="trip-relaxing">{{trips.relaxing_activities}}</p>
-    <p class="shopping">{{trips.shopping}}</p>
-    <p class="trip-pet">{{trips.allow_pets}}</p>
+    <img class="explore graphic" src="../../assets/landing/explore-graphic.png" alt="explore graphic">
+
+    <h6 class="post-q">Tell us about your trip:</h6>
+    <p class="trip-desc post-a">{{trips.description}}</p>
+    
+    <h6 class="post-q">What was the budget for your trip?</h6>
+    <p class="trip-budget post-a">{{trips.budget}}</p>
+
+    <h6 class="post-q">How many people were travelling together?</h6>
+    <p class="trip-travelers post-a">{{trips.total_travelers}}</p>
+
+    <h6 class="post-q">Where did you enjoy dining?</h6>
+    <p class="trip-restaurant_rec1 post-a">{{trips.restaurant_rec1}}</p>
+    <p class="trip-restaurant_rec2 post-a">{{trip.restaurant_rec2}}</p>
+    <p class="trip-restaurant_rec3 post-a">{{trip.restaurant_rec3}}</p>
+
+    <h6 class="post-q">Where did you stay?</h6>
+    <p class="trip-hotel post-a">{{trips.hotel}}</p>
+
+    <h6 class="post-q">What was your favorite cultural experience?</h6>
+    <p class="trip-culture post-a">{{trips.culture}}</p>
+
+    <h6 class="post-q">What was your favorite "active" activity?</h6>
+    <p class="trip-active post-a">{{trips.active_activities}}</p>
+
+    <h6 class="post-q">What was your favorite "relaxing" activity?</h6>
+    <p class="trip-relaxing post-a">{{trips.relaxing_activities}}</p>
+
+    <h6 class="post-q">Where did you go shopping?</h6>
+    <p class="shopping post-a">{{trips.shopping}}</p>
+
+    <h6 class="post-q">Was this a pet-friendly location?</h6>
+    <p class="trip-pet post-a">{{trips.allow_pets}}</p>
+
 </div>

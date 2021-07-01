@@ -19,11 +19,11 @@ async function newFormHandler(event) {
     total_travelers = parseInt(total_travelers);
     budget = parseInt(budget);
     
-    if(allow_pets === 'true'){
-      allow_pets = true;
-    }else{
-      allow_pets = false;
-    }
+    // if(allow_pets === 'yes'){
+    //   allow_pets = true;
+    // }else{
+    //   allow_pets = false;
+    // }
 
     // Send fetch request to add a new trip
     const response = await fetch(`/api/trip`, {

@@ -60,7 +60,7 @@ Trip.init(
       allowNull: true,
     },
     allow_pets: {
-      type: DataTypes.BOOLEAN,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     location_id: {
