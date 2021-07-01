@@ -193,7 +193,6 @@ footer {
     background-color: #a096859a;
 }
 .flex-image {
-    /* border:1px solid purple; */
     flex: 0 1 auto;
     border-right: 1px solid var(--brown);
 }
@@ -468,6 +467,7 @@ input {
     .login-form {
         margin-bottom: 2em;
     }
+
     /* MAIN */
     .main-header {
         background-color: var(--brown);
@@ -488,11 +488,14 @@ input {
     #logout {
         background-color: transparent;
     }
+
     /* MARQUEE */
     .marquee {
         animation: moveLeft 15s linear infinite;
     }
+
     /* LOCATION PAGE */
+    /* intro section */
     .location-intro {
         flex-direction: column;
     }
@@ -500,7 +503,6 @@ input {
     .loc-right, #locVideo {
         display: none;
     }
-    /* style intro section */
     .loc-left {
         width: 100%;
         padding: 2em;
@@ -516,4 +518,25 @@ input {
     .intro-cta {
         margin-top: 1.2em;
     }
+    /* locations list */
+    .all-locations {
+        padding: 1em;
+    }
+    .location-header {
+        display: none;
+    }
+    .location-card {
+        flex-direction: column;
+    }
+    .flex-image {
+        border-right: none;
+        align-self: center;
+    }
+    .loc-image {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        border-bottom: 1px solid var(--brown);
+    }
+    
 }
