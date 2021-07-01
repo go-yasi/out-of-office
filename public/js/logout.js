@@ -12,4 +12,5 @@ const logout = async () => {
   };
   
   document.querySelector('#logout').addEventListener('click', logout);
+  // logout not loggin us out
   
