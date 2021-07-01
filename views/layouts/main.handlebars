@@ -43,7 +43,7 @@
   
 
   <!-- Only include if user is logged in -->
-
+{{#if logged_in}}
   <footer>
     <div class="credits">
       <p>Proudly created by
@@ -55,9 +55,9 @@
       </p>
     </div>
   </footer>
-  
-  <script src="/js/logout.js"></script>
+{{/if}}
 
+  <script src="/js/logout.js"></script>
 
 </body>
 
