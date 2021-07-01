@@ -288,7 +288,7 @@ input {
     border-bottom: 1px solid gray;
     width: 20vw;
 }
-.login-btn, .signup-btn {
+.login-btn, .signup-btn, .new-post-submit {
     border-radius: 0;
     border: none;
     background-color: var(--brown);
@@ -296,10 +296,13 @@ input {
     padding: 1em 2em;
     cursor: pointer;
     transition: .5s ease;
+    text-transform: uppercase;
+    letter-spacing: .1em;
 }
 
-.login-btn:hover, .signup-btn:hover {
+.login-btn:hover, .signup-btn:hover, .new-post-submit:hover {
     background-color: var(--greenish);
+    color: var(--brown);
 }
 
 /* SHARE FORM PAGE */
@@ -308,16 +311,44 @@ input {
     padding: 4em;
     margin: 2vw 6vw;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .share-form-header {
     font-family: 'Cursive';
     font-size: 4vw;
     text-align: center;
+    margin-bottom: 3vw;
+}
+.asterisk {
+    margin-top: .8em;
+    padding-bottom: .5em;
+    border-bottom: 1px solid var(--brown);
+    font-size: 12px;
+    margin-bottom: 1em;
+}
+.share-label {
+    font-size: 11px;
+     letter-spacing: .1em;
+     text-transform: uppercase;
+     margin-top: 30px;
 }
 .share-input {
-    color: red;
+    color: var(--brown);
     text-transform: none;
     text-align: left;
+    border: 1px solid var(--brown);
+    /* margin-top: 10px; */
+    display: block;
+    width: 50vw;
+    background-color: white;
+}
+.form-inputs {
+    margin: 0 auto !important;
+}
+.new-post-submit {
+    margin-top: 1em;
 }
 
 
@@ -372,4 +403,8 @@ input {
 }
 .post-a {
     margin-top: .5em;
+}
+.user-photo {
+    width: 40vw;
+    height: 40vw;
 }

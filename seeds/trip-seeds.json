@@ -56,7 +56,8 @@
         "relaxing_activities":"Descanso Gardens",
         "shopping":"Grand Central Market",
         "allow_pets": "yes",
-        "location_id":2
+        "location_id":2, 
+        "user_id": 1
     },
     {   
         "description":"We went on a family trip to explore Machu Picchu.",
