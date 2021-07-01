@@ -544,5 +544,13 @@ input {
         font-size: 14px;
         line-height: 1.1;
     }
-    
+    /* TRIPS PAGE */
+    .plane {
+        width: 100px;
+        margin-top: .5em;
+    }
+    .trips.intro-text {
+        font-size: 40px;
+        padding: 0 40px;
+    }
 }
