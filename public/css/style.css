@@ -477,4 +477,24 @@ input {
     .login-form {
         margin-bottom: 2em;
     }
+    /* MAIN */
+    .main-header {
+        background-color: var(--brown);
+    }
+    .ooo-header-logo {
+        font-size: 32px;
+        margin-top: 0;
+        color: var(--lightgreen);
+    }
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+    .navguy {
+        color: var(--lightgreen);
+    }
+    #logout {
+        background-color: transparent;
+    }
 }
